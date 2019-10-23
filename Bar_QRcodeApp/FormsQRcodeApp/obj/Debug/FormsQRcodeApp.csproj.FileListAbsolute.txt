@@ -1,0 +1,15 @@
+C:\Users\LeomonRD\source\repos\FormsQRcodeApp\FormsQRcodeApp\bin\Debug\FormsQRcodeApp.exe.config
+C:\Users\LeomonRD\source\repos\FormsQRcodeApp\FormsQRcodeApp\bin\Debug\FormsQRcodeApp.exe
+C:\Users\LeomonRD\source\repos\FormsQRcodeApp\FormsQRcodeApp\bin\Debug\FormsQRcodeApp.pdb
+C:\Users\LeomonRD\source\repos\FormsQRcodeApp\FormsQRcodeApp\bin\Debug\QRCoder.dll
+C:\Users\LeomonRD\source\repos\FormsQRcodeApp\FormsQRcodeApp\bin\Debug\System.Drawing.Common.dll
+C:\Users\LeomonRD\source\repos\FormsQRcodeApp\FormsQRcodeApp\obj\Debug\FormsQRcodeApp.csprojAssemblyReference.cache
+C:\Users\LeomonRD\source\repos\FormsQRcodeApp\FormsQRcodeApp\obj\Debug\FormsQRcodeApp.Properties.Resources.resources
+C:\Users\LeomonRD\source\repos\FormsQRcodeApp\FormsQRcodeApp\obj\Debug\FormsQRcodeApp.csproj.GenerateResource.cache
+C:\Users\LeomonRD\source\repos\FormsQRcodeApp\FormsQRcodeApp\obj\Debug\FormsQRcodeApp.csproj.CoreCompileInputs.cache
+C:\Users\LeomonRD\source\repos\FormsQRcodeApp\FormsQRcodeApp\obj\Debug\FormsQRcodeApp.csproj.CopyComplete
+C:\Users\LeomonRD\source\repos\FormsQRcodeApp\FormsQRcodeApp\obj\Debug\FormsQRcodeApp.exe
+C:\Users\LeomonRD\source\repos\FormsQRcodeApp\FormsQRcodeApp\obj\Debug\FormsQRcodeApp.pdb
+C:\Users\LeomonRD\source\repos\FormsQRcodeApp\FormsQRcodeApp\obj\Debug\FormsQRcodeApp.Barcode.resources
+C:\Users\LeomonRD\source\repos\FormsQRcodeApp\FormsQRcodeApp\obj\Debug\FormsQRcodeApp.Qrcode.resources
+C:\Users\LeomonRD\source\repos\FormsQRcodeApp\FormsQRcodeApp\bin\Debug\Zen.Barcode.Core.dll
