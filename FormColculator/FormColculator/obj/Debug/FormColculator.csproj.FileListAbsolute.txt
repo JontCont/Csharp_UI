@@ -1,0 +1,14 @@
+C:\Users\LeomonRD\source\repos\FormColculator\FormColculator\bin\Debug\FormColculator.exe.config
+C:\Users\LeomonRD\source\repos\FormColculator\FormColculator\bin\Debug\FormColculator.exe
+C:\Users\LeomonRD\source\repos\FormColculator\FormColculator\bin\Debug\FormColculator.pdb
+C:\Users\LeomonRD\source\repos\FormColculator\FormColculator\bin\Debug\MetroFramework.Design.dll
+C:\Users\LeomonRD\source\repos\FormColculator\FormColculator\bin\Debug\MetroFramework.dll
+C:\Users\LeomonRD\source\repos\FormColculator\FormColculator\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\LeomonRD\source\repos\FormColculator\FormColculator\obj\Debug\FormColculator.csprojAssemblyReference.cache
+C:\Users\LeomonRD\source\repos\FormColculator\FormColculator\obj\Debug\FormColculator.Form1.resources
+C:\Users\LeomonRD\source\repos\FormColculator\FormColculator\obj\Debug\FormColculator.Properties.Resources.resources
+C:\Users\LeomonRD\source\repos\FormColculator\FormColculator\obj\Debug\FormColculator.csproj.GenerateResource.cache
+C:\Users\LeomonRD\source\repos\FormColculator\FormColculator\obj\Debug\FormColculator.csproj.CoreCompileInputs.cache
+C:\Users\LeomonRD\source\repos\FormColculator\FormColculator\obj\Debug\FormColculator.csproj.CopyComplete
+C:\Users\LeomonRD\source\repos\FormColculator\FormColculator\obj\Debug\FormColculator.exe
+C:\Users\LeomonRD\source\repos\FormColculator\FormColculator\obj\Debug\FormColculator.pdb
