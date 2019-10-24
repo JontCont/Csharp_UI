@@ -7,65 +7,115 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace FormColculator
 {
     public partial class Form1 : MetroFramework.Forms.MetroForm
     {
-        float first_no , secc_no;
+        float first_no, secc_no,num;
         string option;
         public Form1()
         {
             InitializeComponent();
             TextBox1.Text = " ";
-            
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            
-        }
+        private void HtmlPanel1_Click(object sender, EventArgs e) { }
+        private void Form1_Load(object sender, EventArgs e) { }
 
         private void Mb01_Click(object sender, EventArgs e)
         {
+            if (TextBox1.Text == "0" ) {
+                TextBox1.Text = " ";
+                TextBox1.Text += 1;
+            }
+            else
                 TextBox1.Text += 1;
         }
         private void Mb02_Click(object sender, EventArgs e)
         {
+            if (TextBox1.Text == "0")
+            {
+                TextBox1.Text = " ";
+                TextBox1.Text += 2;
+            }
+            else
                 TextBox1.Text += 2;
         }
         private void Mb03_Click(object sender, EventArgs e)
         {
+            if (TextBox1.Text == "0")
+            {
+                TextBox1.Text = " ";
+                TextBox1.Text += 3;
+            }
+            else
                 TextBox1.Text += 3;
         }
 
         private void Mb04_Click(object sender, EventArgs e)
         {
+            if (TextBox1.Text == "0")
+            {
+                TextBox1.Text = " ";
                 TextBox1.Text += 4;
+            }
+            else
+                 TextBox1.Text += 4;
         }
 
         private void Mb05_Click(object sender, EventArgs e)
         {
+            if (TextBox1.Text == "0")
+            {
+                TextBox1.Text = " ";
+                TextBox1.Text += 5;
+            }
+            else
                 TextBox1.Text += 5;
         }
 
         private void Mb06_Click(object sender, EventArgs e)
         {
+            if (TextBox1.Text == "0")
+            {
+                TextBox1.Text = " ";
+                TextBox1.Text += 6;
+            }
+            else
                 TextBox1.Text += 6;
         }
 
         private void Mb07_Click(object sender, EventArgs e)
         {
+            if (TextBox1.Text == "0")
+            {
+                TextBox1.Text = " ";
+                TextBox1.Text += 7;
+            }
+            else
                 TextBox1.Text += 7;
         }
 
         private void Mb08_Click(object sender, EventArgs e)
         {
+            if (TextBox1.Text == "0")
+            {
+                TextBox1.Text = " ";
+                TextBox1.Text += 8;
+            }
+            else
                 TextBox1.Text += 8;
         }
 
         private void Mb09_Click(object sender, EventArgs e)
         {
+            if (TextBox1.Text == "0")
+            {
+                TextBox1.Text = " ";
+                TextBox1.Text += 9;
+            }
+            else
                 TextBox1.Text += 9;
         }
 
@@ -79,15 +129,16 @@ namespace FormColculator
 
         private void MbC_Click(object sender, EventArgs e)
         {
-            option = "";
+            option = " ";
             label1.Text = " ";
             TextBox1.Text = " ";
         }
 
         private void MbCE_Click(object sender, EventArgs e)
         {
-            TextBox1.Text = " ";
-            
+            option = " ";
+            label1.Text = " ";
+            TextBox1.Text = "0";
         }
 
         private void Mblife_Click(object sender, EventArgs e)
@@ -104,10 +155,10 @@ namespace FormColculator
 
         private void MbAND_Click(object sender, EventArgs e)
         {
-            secc_no = float.Parse(TextBox1.Text);
 
-            float num;
+            secc_no = float.Parse(TextBox1.Text);
             label1.Text = first_no.ToString() + option +secc_no.ToString()+"=";
+
             switch (option)
             {
                 case "+":
@@ -134,9 +185,8 @@ namespace FormColculator
 
         private void MbA_Click(object sender, EventArgs e)
         {
-            TextBox1.Text = TextBox1.Text;
-            first_no = float.Parse(TextBox1.Text);
             option = "+";
+            first_no = float.Parse(TextBox1.Text);
             label1.Text = first_no.ToString() + option;
             TextBox1.Text = " ";
         }
@@ -173,17 +223,14 @@ namespace FormColculator
                 TextBox1.Text += ".";
         }
 
+        
         private void MbAN_Click(object sender, EventArgs e)
         {
             if (TextBox1.Text.Contains("-"))
-            {
-                TextBox1.Text = TextBox1.Text.Remove(0,1);
-            }
-            else if(!TextBox1.Text.Contains("-"))
-            {
-                TextBox1.Text = "-" + TextBox1.Text;
-            }
-            
+                TextBox1.Text = TextBox1.Text.Remove(0, 1);
+            else if (!TextBox1.Text.Contains("-"))
+                TextBox1.Text ="-"+TextBox1.Text; 
+
         }
     }
 }

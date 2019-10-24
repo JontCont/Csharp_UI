@@ -56,16 +56,17 @@
             // 
             // htmlPanel1
             // 
+            this.htmlPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.htmlPanel1.AutoScroll = true;
             this.htmlPanel1.AutoScrollMinSize = new System.Drawing.Size(496, 0);
             this.htmlPanel1.BackColor = System.Drawing.SystemColors.Window;
             this.htmlPanel1.Controls.Add(this.label1);
             this.htmlPanel1.Controls.Add(this.TextBox1);
-            this.htmlPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.htmlPanel1.Location = new System.Drawing.Point(20, 60);
             this.htmlPanel1.Name = "htmlPanel1";
             this.htmlPanel1.Size = new System.Drawing.Size(496, 75);
             this.htmlPanel1.TabIndex = 23;
+            this.htmlPanel1.Click += new System.EventHandler(this.HtmlPanel1_Click);
             // 
             // label1
             // 
@@ -90,6 +91,7 @@
             // 
             // mbCE
             // 
+            this.mbCE.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mbCE.BackColor = System.Drawing.Color.Teal;
             this.mbCE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.mbCE.ForeColor = System.Drawing.Color.White;
@@ -106,6 +108,7 @@
             // 
             // mbC
             // 
+            this.mbC.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mbC.BackColor = System.Drawing.Color.Teal;
             this.mbC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.mbC.ForeColor = System.Drawing.Color.White;
@@ -122,6 +125,7 @@
             // 
             // mblife
             // 
+            this.mblife.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mblife.BackColor = System.Drawing.Color.Teal;
             this.mblife.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.mblife.ForeColor = System.Drawing.Color.White;
@@ -138,6 +142,7 @@
             // 
             // mbQ
             // 
+            this.mbQ.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mbQ.BackColor = System.Drawing.Color.Teal;
             this.mbQ.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.mbQ.ForeColor = System.Drawing.Color.White;
@@ -154,6 +159,7 @@
             // 
             // mb07
             // 
+            this.mb07.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mb07.BackColor = System.Drawing.Color.Teal;
             this.mb07.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.mb07.ForeColor = System.Drawing.Color.White;
@@ -170,6 +176,7 @@
             // 
             // mb08
             // 
+            this.mb08.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mb08.BackColor = System.Drawing.Color.Teal;
             this.mb08.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.mb08.ForeColor = System.Drawing.Color.White;
@@ -186,6 +193,7 @@
             // 
             // mb09
             // 
+            this.mb09.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mb09.BackColor = System.Drawing.Color.Teal;
             this.mb09.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.mb09.ForeColor = System.Drawing.Color.White;
@@ -202,6 +210,7 @@
             // 
             // mbS
             // 
+            this.mbS.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mbS.BackColor = System.Drawing.Color.Teal;
             this.mbS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.mbS.ForeColor = System.Drawing.Color.White;
@@ -218,6 +227,7 @@
             // 
             // mb04
             // 
+            this.mb04.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mb04.BackColor = System.Drawing.Color.Teal;
             this.mb04.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.mb04.ForeColor = System.Drawing.Color.White;
@@ -234,6 +244,7 @@
             // 
             // mb05
             // 
+            this.mb05.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mb05.BackColor = System.Drawing.Color.Teal;
             this.mb05.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.mb05.ForeColor = System.Drawing.Color.White;
@@ -250,6 +261,7 @@
             // 
             // mb06
             // 
+            this.mb06.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mb06.BackColor = System.Drawing.Color.Teal;
             this.mb06.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.mb06.ForeColor = System.Drawing.Color.White;
@@ -266,6 +278,7 @@
             // 
             // mbN
             // 
+            this.mbN.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mbN.BackColor = System.Drawing.Color.Teal;
             this.mbN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.mbN.ForeColor = System.Drawing.Color.White;
@@ -282,6 +295,7 @@
             // 
             // mb01
             // 
+            this.mb01.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mb01.BackColor = System.Drawing.Color.Teal;
             this.mb01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.mb01.ForeColor = System.Drawing.Color.White;
@@ -298,6 +312,7 @@
             // 
             // mb02
             // 
+            this.mb02.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mb02.BackColor = System.Drawing.Color.Teal;
             this.mb02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.mb02.ForeColor = System.Drawing.Color.White;
@@ -314,6 +329,7 @@
             // 
             // mb03
             // 
+            this.mb03.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mb03.BackColor = System.Drawing.Color.Teal;
             this.mb03.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.mb03.ForeColor = System.Drawing.Color.White;
@@ -330,6 +346,7 @@
             // 
             // mbA
             // 
+            this.mbA.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mbA.BackColor = System.Drawing.Color.Teal;
             this.mbA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.mbA.ForeColor = System.Drawing.Color.White;
@@ -346,6 +363,7 @@
             // 
             // mbAN
             // 
+            this.mbAN.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mbAN.BackColor = System.Drawing.Color.Teal;
             this.mbAN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.mbAN.ForeColor = System.Drawing.Color.White;
@@ -362,6 +380,7 @@
             // 
             // mb0
             // 
+            this.mb0.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mb0.BackColor = System.Drawing.Color.Teal;
             this.mb0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.mb0.ForeColor = System.Drawing.Color.White;
@@ -378,6 +397,7 @@
             // 
             // mbF
             // 
+            this.mbF.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mbF.BackColor = System.Drawing.Color.Teal;
             this.mbF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.mbF.ForeColor = System.Drawing.Color.White;
@@ -394,6 +414,7 @@
             // 
             // mbAND
             // 
+            this.mbAND.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mbAND.BackColor = System.Drawing.Color.Teal;
             this.mbAND.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.mbAND.ForeColor = System.Drawing.Color.White;
