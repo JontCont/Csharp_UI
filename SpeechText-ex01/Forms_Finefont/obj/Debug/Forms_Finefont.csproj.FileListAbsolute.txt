@@ -18,3 +18,13 @@ E:\Forms_Finefont\Forms_Finefont\obj\Debug\Forms_Finefont.csproj.CoreCompileInpu
 E:\Forms_Finefont\Forms_Finefont\obj\Debug\Forms_Finefont.exe
 E:\Forms_Finefont\Forms_Finefont\obj\Debug\Forms_Finefont.pdb
 E:\Forms_Finefont\Forms_Finefont\obj\Debug\Forms_Finefont.csprojAssemblyReference.cache
+E:\app_FormC\SpeechText-ex01\Forms_Finefont\bin\Debug\Forms_Finefont.exe.config
+E:\app_FormC\SpeechText-ex01\Forms_Finefont\bin\Debug\Forms_Finefont.exe
+E:\app_FormC\SpeechText-ex01\Forms_Finefont\bin\Debug\Forms_Finefont.pdb
+E:\app_FormC\SpeechText-ex01\Forms_Finefont\obj\Debug\Forms_Finefont.csprojAssemblyReference.cache
+E:\app_FormC\SpeechText-ex01\Forms_Finefont\obj\Debug\Forms_Finefont.Form1.resources
+E:\app_FormC\SpeechText-ex01\Forms_Finefont\obj\Debug\Forms_Finefont.Properties.Resources.resources
+E:\app_FormC\SpeechText-ex01\Forms_Finefont\obj\Debug\Forms_Finefont.csproj.GenerateResource.cache
+E:\app_FormC\SpeechText-ex01\Forms_Finefont\obj\Debug\Forms_Finefont.csproj.CoreCompileInputs.cache
+E:\app_FormC\SpeechText-ex01\Forms_Finefont\obj\Debug\Forms_Finefont.exe
+E:\app_FormC\SpeechText-ex01\Forms_Finefont\obj\Debug\Forms_Finefont.pdb
