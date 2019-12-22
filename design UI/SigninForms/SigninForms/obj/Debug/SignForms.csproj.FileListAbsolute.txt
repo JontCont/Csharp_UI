@@ -10,3 +10,15 @@ E:\Login\SigninForms\SigninForms\obj\Debug\SigninForms.pdb
 E:\Login\SigninForms\SigninForms\obj\Debug\SignForms.csprojAssemblyReference.cache
 E:\Login\SigninForms\SigninForms\obj\Debug\SigninForms.Signup.resources
 E:\Login\SigninForms\SigninForms\obj\Debug\SigninForms.Guest.SQLForm1.resources
+E:\GIT\app_FormC\design UI\SigninForms\SigninForms\bin\Debug\SigninForms.exe.config
+E:\GIT\app_FormC\design UI\SigninForms\SigninForms\bin\Debug\SigninForms.exe
+E:\GIT\app_FormC\design UI\SigninForms\SigninForms\bin\Debug\SigninForms.pdb
+E:\GIT\app_FormC\design UI\SigninForms\SigninForms\obj\Debug\SignForms.csprojAssemblyReference.cache
+E:\GIT\app_FormC\design UI\SigninForms\SigninForms\obj\Debug\SigninForms.Signin.resources
+E:\GIT\app_FormC\design UI\SigninForms\SigninForms\obj\Debug\SigninForms.Signup.resources
+E:\GIT\app_FormC\design UI\SigninForms\SigninForms\obj\Debug\SigninForms.Guest.SQLForm1.resources
+E:\GIT\app_FormC\design UI\SigninForms\SigninForms\obj\Debug\SigninForms.Properties.Resources.resources
+E:\GIT\app_FormC\design UI\SigninForms\SigninForms\obj\Debug\SignForms.csproj.GenerateResource.cache
+E:\GIT\app_FormC\design UI\SigninForms\SigninForms\obj\Debug\SignForms.csproj.CoreCompileInputs.cache
+E:\GIT\app_FormC\design UI\SigninForms\SigninForms\obj\Debug\SigninForms.exe
+E:\GIT\app_FormC\design UI\SigninForms\SigninForms\obj\Debug\SigninForms.pdb
