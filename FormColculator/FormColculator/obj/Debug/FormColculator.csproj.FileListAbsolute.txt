@@ -26,3 +26,16 @@ E:\app_FormC\FormColculator\FormColculator\obj\Debug\FormColculator.csproj.CoreC
 E:\app_FormC\FormColculator\FormColculator\obj\Debug\FormColculator.csproj.CopyComplete
 E:\app_FormC\FormColculator\FormColculator\obj\Debug\FormColculator.exe
 E:\app_FormC\FormColculator\FormColculator\obj\Debug\FormColculator.pdb
+E:\GIT\app_FormC\FormColculator\FormColculator\bin\Debug\FormColculator.exe.config
+E:\GIT\app_FormC\FormColculator\FormColculator\bin\Debug\FormColculator.exe
+E:\GIT\app_FormC\FormColculator\FormColculator\bin\Debug\FormColculator.pdb
+E:\GIT\app_FormC\FormColculator\FormColculator\bin\Debug\MetroFramework.Design.dll
+E:\GIT\app_FormC\FormColculator\FormColculator\bin\Debug\MetroFramework.dll
+E:\GIT\app_FormC\FormColculator\FormColculator\bin\Debug\MetroFramework.Fonts.dll
+E:\GIT\app_FormC\FormColculator\FormColculator\obj\Debug\FormColculator.csprojAssemblyReference.cache
+E:\GIT\app_FormC\FormColculator\FormColculator\obj\Debug\FormColculator.Form1.resources
+E:\GIT\app_FormC\FormColculator\FormColculator\obj\Debug\FormColculator.Properties.Resources.resources
+E:\GIT\app_FormC\FormColculator\FormColculator\obj\Debug\FormColculator.csproj.GenerateResource.cache
+E:\GIT\app_FormC\FormColculator\FormColculator\obj\Debug\FormColculator.csproj.CopyComplete
+E:\GIT\app_FormC\FormColculator\FormColculator\obj\Debug\FormColculator.exe
+E:\GIT\app_FormC\FormColculator\FormColculator\obj\Debug\FormColculator.pdb

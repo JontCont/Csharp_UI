@@ -18,3 +18,12 @@ E:\app_FormC\素材\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1
 E:\app_FormC\素材\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 E:\app_FormC\素材\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 E:\app_FormC\素材\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+E:\GIT\app_FormC\Easy_search-ex01\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+E:\GIT\app_FormC\Easy_search-ex01\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+E:\GIT\app_FormC\Easy_search-ex01\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+E:\GIT\app_FormC\Easy_search-ex01\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+E:\GIT\app_FormC\Easy_search-ex01\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+E:\GIT\app_FormC\Easy_search-ex01\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+E:\GIT\app_FormC\Easy_search-ex01\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+E:\GIT\app_FormC\Easy_search-ex01\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+E:\GIT\app_FormC\Easy_search-ex01\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

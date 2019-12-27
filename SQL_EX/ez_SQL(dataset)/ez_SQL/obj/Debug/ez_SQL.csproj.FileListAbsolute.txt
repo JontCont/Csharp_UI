@@ -1,0 +1,9 @@
+C:\Users\LeomonRD\source\repos\ez_SQL\ez_SQL\bin\Debug\ez_SQL.exe.config
+C:\Users\LeomonRD\source\repos\ez_SQL\ez_SQL\bin\Debug\ez_SQL.exe
+C:\Users\LeomonRD\source\repos\ez_SQL\ez_SQL\bin\Debug\ez_SQL.pdb
+C:\Users\LeomonRD\source\repos\ez_SQL\ez_SQL\obj\Debug\ez_SQL.csprojAssemblyReference.cache
+C:\Users\LeomonRD\source\repos\ez_SQL\ez_SQL\obj\Debug\ez_SQL.Form1.resources
+C:\Users\LeomonRD\source\repos\ez_SQL\ez_SQL\obj\Debug\ez_SQL.Properties.Resources.resources
+C:\Users\LeomonRD\source\repos\ez_SQL\ez_SQL\obj\Debug\ez_SQL.csproj.GenerateResource.cache
+C:\Users\LeomonRD\source\repos\ez_SQL\ez_SQL\obj\Debug\ez_SQL.exe
+C:\Users\LeomonRD\source\repos\ez_SQL\ez_SQL\obj\Debug\ez_SQL.pdb
