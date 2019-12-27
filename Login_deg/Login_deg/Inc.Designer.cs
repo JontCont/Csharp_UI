@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties23 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties24 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inc));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties21 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties22 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
@@ -221,22 +221,22 @@
             this.Login_btu.IndicateFocus = true;
             this.Login_btu.Location = new System.Drawing.Point(92, 447);
             this.Login_btu.Name = "Login_btu";
-            stateProperties23.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(216)))), ((int)(((byte)(113)))));
-            stateProperties23.BorderRadius = 1;
-            stateProperties23.BorderThickness = 1;
-            stateProperties23.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(216)))), ((int)(((byte)(113)))));
-            stateProperties23.ForeColor = System.Drawing.Color.White;
-            stateProperties23.IconLeftImage = null;
-            stateProperties23.IconRightImage = null;
-            this.Login_btu.onHoverState = stateProperties23;
-            stateProperties24.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(189)))), ((int)(((byte)(68)))));
-            stateProperties24.BorderRadius = 1;
-            stateProperties24.BorderThickness = 1;
-            stateProperties24.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(189)))), ((int)(((byte)(68)))));
-            stateProperties24.ForeColor = System.Drawing.Color.White;
-            stateProperties24.IconLeftImage = null;
-            stateProperties24.IconRightImage = null;
-            this.Login_btu.OnPressedState = stateProperties24;
+            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(216)))), ((int)(((byte)(113)))));
+            stateProperties11.BorderRadius = 1;
+            stateProperties11.BorderThickness = 1;
+            stateProperties11.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(216)))), ((int)(((byte)(113)))));
+            stateProperties11.ForeColor = System.Drawing.Color.White;
+            stateProperties11.IconLeftImage = null;
+            stateProperties11.IconRightImage = null;
+            this.Login_btu.onHoverState = stateProperties11;
+            stateProperties12.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(189)))), ((int)(((byte)(68)))));
+            stateProperties12.BorderRadius = 1;
+            stateProperties12.BorderThickness = 1;
+            stateProperties12.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(189)))), ((int)(((byte)(68)))));
+            stateProperties12.ForeColor = System.Drawing.Color.White;
+            stateProperties12.IconLeftImage = null;
+            stateProperties12.IconRightImage = null;
+            this.Login_btu.OnPressedState = stateProperties12;
             this.Login_btu.Size = new System.Drawing.Size(210, 45);
             this.Login_btu.TabIndex = 11;
             this.Login_btu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -307,6 +307,7 @@
             this.paw_bun.TextMarginTop = 0;
             this.paw_bun.TextPlaceholder = "";
             this.paw_bun.UseSystemPasswordChar = false;
+            this.paw_bun.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.paw_bun_KeyPress);
             // 
             // usrname_bun
             // 
@@ -358,6 +359,7 @@
             this.usrname_bun.TextPlaceholder = "";
             this.usrname_bun.UseSystemPasswordChar = false;
             this.usrname_bun.TextChanged += new System.EventHandler(this.Usrname_bun_TextChanged);
+            this.usrname_bun.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.usrname_bun_KeyPress);
             // 
             // return_btu
             // 
@@ -387,22 +389,22 @@
             this.return_btu.IndicateFocus = true;
             this.return_btu.Location = new System.Drawing.Point(92, 498);
             this.return_btu.Name = "return_btu";
-            stateProperties21.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(216)))), ((int)(((byte)(113)))));
-            stateProperties21.BorderRadius = 1;
-            stateProperties21.BorderThickness = 1;
-            stateProperties21.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(216)))), ((int)(((byte)(113)))));
-            stateProperties21.ForeColor = System.Drawing.Color.White;
-            stateProperties21.IconLeftImage = null;
-            stateProperties21.IconRightImage = null;
-            this.return_btu.onHoverState = stateProperties21;
-            stateProperties22.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(189)))), ((int)(((byte)(68)))));
-            stateProperties22.BorderRadius = 1;
-            stateProperties22.BorderThickness = 1;
-            stateProperties22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(189)))), ((int)(((byte)(68)))));
-            stateProperties22.ForeColor = System.Drawing.Color.White;
-            stateProperties22.IconLeftImage = null;
-            stateProperties22.IconRightImage = null;
-            this.return_btu.OnPressedState = stateProperties22;
+            stateProperties9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(216)))), ((int)(((byte)(113)))));
+            stateProperties9.BorderRadius = 1;
+            stateProperties9.BorderThickness = 1;
+            stateProperties9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(216)))), ((int)(((byte)(113)))));
+            stateProperties9.ForeColor = System.Drawing.Color.White;
+            stateProperties9.IconLeftImage = null;
+            stateProperties9.IconRightImage = null;
+            this.return_btu.onHoverState = stateProperties9;
+            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(189)))), ((int)(((byte)(68)))));
+            stateProperties10.BorderRadius = 1;
+            stateProperties10.BorderThickness = 1;
+            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(189)))), ((int)(((byte)(68)))));
+            stateProperties10.ForeColor = System.Drawing.Color.White;
+            stateProperties10.IconLeftImage = null;
+            stateProperties10.IconRightImage = null;
+            this.return_btu.OnPressedState = stateProperties10;
             this.return_btu.Size = new System.Drawing.Size(210, 45);
             this.return_btu.TabIndex = 13;
             this.return_btu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -429,6 +431,7 @@
             this.Controls.Add(this.bunifuCards1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Inc";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inc";
             this.Load += new System.EventHandler(this.Inc_Load);
             this.bunifuCards1.ResumeLayout(false);

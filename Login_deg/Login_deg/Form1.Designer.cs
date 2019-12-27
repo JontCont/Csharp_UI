@@ -141,7 +141,7 @@
             this.Reg_btu.IdleIconLeftImage = null;
             this.Reg_btu.IdleIconRightImage = null;
             this.Reg_btu.IndicateFocus = true;
-            this.Reg_btu.Location = new System.Drawing.Point(97, 351);
+            this.Reg_btu.Location = new System.Drawing.Point(97, 447);
             this.Reg_btu.Name = "Reg_btu";
             stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(216)))), ((int)(((byte)(113)))));
             stateProperties1.BorderRadius = 1;
@@ -243,7 +243,7 @@
             this.Login_btu.IdleIconLeftImage = null;
             this.Login_btu.IdleIconRightImage = null;
             this.Login_btu.IndicateFocus = true;
-            this.Login_btu.Location = new System.Drawing.Point(97, 453);
+            this.Login_btu.Location = new System.Drawing.Point(97, 359);
             this.Login_btu.Name = "Login_btu";
             stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(216)))), ((int)(((byte)(113)))));
             stateProperties3.BorderRadius = 1;
@@ -277,6 +277,7 @@
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form_Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
