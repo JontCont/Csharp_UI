@@ -13,3 +13,17 @@ C:\Users\LeomonRD\source\repos\FormsQRcodeApp\FormsQRcodeApp\obj\Debug\FormsQRco
 C:\Users\LeomonRD\source\repos\FormsQRcodeApp\FormsQRcodeApp\obj\Debug\FormsQRcodeApp.Barcode.resources
 C:\Users\LeomonRD\source\repos\FormsQRcodeApp\FormsQRcodeApp\obj\Debug\FormsQRcodeApp.Qrcode.resources
 C:\Users\LeomonRD\source\repos\FormsQRcodeApp\FormsQRcodeApp\bin\Debug\Zen.Barcode.Core.dll
+E:\GIT\Csharp_UI\Bar_QRcodeApp\FormsQRcodeApp\bin\Debug\FormsQRcodeApp.exe.config
+E:\GIT\Csharp_UI\Bar_QRcodeApp\FormsQRcodeApp\bin\Debug\FormsQRcodeApp.exe
+E:\GIT\Csharp_UI\Bar_QRcodeApp\FormsQRcodeApp\bin\Debug\FormsQRcodeApp.pdb
+E:\GIT\Csharp_UI\Bar_QRcodeApp\FormsQRcodeApp\bin\Debug\QRCoder.dll
+E:\GIT\Csharp_UI\Bar_QRcodeApp\FormsQRcodeApp\bin\Debug\System.Drawing.Common.dll
+E:\GIT\Csharp_UI\Bar_QRcodeApp\FormsQRcodeApp\obj\Debug\FormsQRcodeApp.csprojAssemblyReference.cache
+E:\GIT\Csharp_UI\Bar_QRcodeApp\FormsQRcodeApp\obj\Debug\FormsQRcodeApp.Barcode.resources
+E:\GIT\Csharp_UI\Bar_QRcodeApp\FormsQRcodeApp\obj\Debug\FormsQRcodeApp.Qrcode.resources
+E:\GIT\Csharp_UI\Bar_QRcodeApp\FormsQRcodeApp\obj\Debug\FormsQRcodeApp.Properties.Resources.resources
+E:\GIT\Csharp_UI\Bar_QRcodeApp\FormsQRcodeApp\obj\Debug\FormsQRcodeApp.csproj.GenerateResource.cache
+E:\GIT\Csharp_UI\Bar_QRcodeApp\FormsQRcodeApp\obj\Debug\FormsQRcodeApp.csproj.CopyComplete
+E:\GIT\Csharp_UI\Bar_QRcodeApp\FormsQRcodeApp\obj\Debug\FormsQRcodeApp.exe
+E:\GIT\Csharp_UI\Bar_QRcodeApp\FormsQRcodeApp\obj\Debug\FormsQRcodeApp.pdb
+E:\GIT\Csharp_UI\Bar_QRcodeApp\FormsQRcodeApp\obj\Debug\FormsQRcodeApp.headForm.resources

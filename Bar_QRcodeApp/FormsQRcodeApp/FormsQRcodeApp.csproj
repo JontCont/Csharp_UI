@@ -61,6 +61,12 @@
     <Compile Include="Barcode.Designer.cs">
       <DependentUpon>Barcode.cs</DependentUpon>
     </Compile>
+    <Compile Include="headForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="headForm.Designer.cs">
+      <DependentUpon>headForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Qrcode.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Barcode.resx">
       <DependentUpon>Barcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="headForm.resx">
+      <DependentUpon>headForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Qrcode.resx">
       <DependentUpon>Qrcode.cs</DependentUpon>

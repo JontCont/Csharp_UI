@@ -31,5 +31,12 @@ namespace FormsQRcodeApp
 
             }
         }
+
+        private void btu_back_Click(object sender, EventArgs e)
+        {
+            headForm head = new headForm();
+            this.Hide();
+            head.Show();
+        }
     }
 }

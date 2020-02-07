@@ -24,5 +24,12 @@ namespace FormsQRcodeApp
             var code = new QRCoder.QRCode(IData);
             pictureBox1.Image = code.GetGraphic(10);
         }
+
+        private void btu_back_Click(object sender, EventArgs e)
+        {
+            headForm head = new headForm();
+            this.Hide();
+            head.Show();
+        }
     }
 }

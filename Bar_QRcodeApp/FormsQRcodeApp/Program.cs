@@ -16,8 +16,9 @@ namespace FormsQRcodeApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Qrcode());
-            Application.Run(new Barcode());
+            Application.Run(new headForm());
+            //Application.Run(new Qrcode());
+            //Application.Run(new Barcode());
         }
     }
 }
