@@ -27,3 +27,12 @@ E:\GIT\app_FormC\Easy_search-ex01\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Pr
 E:\GIT\app_FormC\Easy_search-ex01\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
 E:\GIT\app_FormC\Easy_search-ex01\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 E:\GIT\app_FormC\Easy_search-ex01\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+E:\GIT\Csharp_UI\Easy_search-ex01\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+E:\GIT\Csharp_UI\Easy_search-ex01\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+E:\GIT\Csharp_UI\Easy_search-ex01\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+E:\GIT\Csharp_UI\Easy_search-ex01\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+E:\GIT\Csharp_UI\Easy_search-ex01\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+E:\GIT\Csharp_UI\Easy_search-ex01\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+E:\GIT\Csharp_UI\Easy_search-ex01\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+E:\GIT\Csharp_UI\Easy_search-ex01\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+E:\GIT\Csharp_UI\Easy_search-ex01\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

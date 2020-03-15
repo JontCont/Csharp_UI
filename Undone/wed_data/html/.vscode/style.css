@@ -1,0 +1,32 @@
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+body{
+    height: auto;
+    
+}
+.conteat{
+    background: #e74cce;
+    color:white;    
+}
+.conteat p{
+    font-size: 20px;
+    
+}
+.header-bar{
+    color:white;
+    font-size: 20px;
+    
+}
+.header-bar li{
+    display:inline;
+    list-style: none;
+
+}
+
+.header-bar a{
+    color:white; 
+    text-decoration: none;
+    
+}

@@ -1,0 +1,14 @@
+C:\Users\LeomonRD\source\repos\Custom_Notification\Custom_Notification\bin\Debug\Custom_Notification.exe.config
+C:\Users\LeomonRD\source\repos\Custom_Notification\Custom_Notification\bin\Debug\Custom_Notification.exe
+C:\Users\LeomonRD\source\repos\Custom_Notification\Custom_Notification\bin\Debug\Custom_Notification.pdb
+C:\Users\LeomonRD\source\repos\Custom_Notification\Custom_Notification\bin\Debug\MetroFramework.Design.dll
+C:\Users\LeomonRD\source\repos\Custom_Notification\Custom_Notification\bin\Debug\MetroFramework.dll
+C:\Users\LeomonRD\source\repos\Custom_Notification\Custom_Notification\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\LeomonRD\source\repos\Custom_Notification\Custom_Notification\obj\Debug\Custom_Notification.csprojAssemblyReference.cache
+C:\Users\LeomonRD\source\repos\Custom_Notification\Custom_Notification\obj\Debug\Custom_Notification.Form1.resources
+C:\Users\LeomonRD\source\repos\Custom_Notification\Custom_Notification\obj\Debug\Custom_Notification.Properties.Resources.resources
+C:\Users\LeomonRD\source\repos\Custom_Notification\Custom_Notification\obj\Debug\Custom_Notification.csproj.GenerateResource.cache
+C:\Users\LeomonRD\source\repos\Custom_Notification\Custom_Notification\obj\Debug\Custom_Notification.csproj.CopyComplete
+C:\Users\LeomonRD\source\repos\Custom_Notification\Custom_Notification\obj\Debug\Custom_Notification.exe
+C:\Users\LeomonRD\source\repos\Custom_Notification\Custom_Notification\obj\Debug\Custom_Notification.pdb
+C:\Users\LeomonRD\source\repos\Custom_Notification\Custom_Notification\obj\Debug\Custom_Notification.Amin_form.resources

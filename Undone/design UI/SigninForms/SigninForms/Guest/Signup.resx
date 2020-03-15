@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>1 簡介
+感謝您選擇 Spotify (以下稱為「Spotify」或「我們」)。Spotify 提供具備社群及互動功能的個人化服務，可用於串流音樂及其他內容，以及可能不定時開發的其他產品與服務。透過註冊或以其他方式使用任何此類 Spotify 服務，包括所有相關特色及功能、網站及使用者介面，以及與我們服務相關的所有內容及軟體應用程式 (合稱「Spotify 服務」或「服務」)，或者透過本服務取得的任何音樂、影片或其他內容或資料 (「內容」)，您即與第 25 條 (聯繫我們) 所註明之 Spotify 實體簽署具有約束力的合約。
+
+您與我們的協議包括這些條款、我們的 隱私權政策，以及除了與任何第三方的條款外，如以下 完整協議 中所論述之您同意的任何條款 (合稱「協議」)。本協議包含 未來的協議變更、匯出管制、自動續訂、責任限制、[隱私權] (PP) 的相關條款，以及 集體訴訟豁免權 與 以仲裁解決爭議 取代訴訟。如果您希望重新檢視協議的條款，您可以在 Spotify 網站上找到協議的現行有效版本。您確認您已閱讀並理解本協議、接受這些協議且同意受其約束。如果您不同意 (或不能遵守) 本協議，則可能無法使用 Spotify 服務或取用任何內容。
+
+為了使用 Spotify 服務與存取內容，您必須：(1) 符合下方圖表所示的年齡規定；(2) 有權與我們簽署具約束力的合約，且不受相關法律的禁止；以及 (3) 居住於有提供本服務之國家。您亦承諾提交至 Spotify 的所有註冊資訊均為真實、準確而完整，且同意始終保持該狀態。 如果您為下列國家之一的居民，煩請參照此圖表中特定國家的年齡限制：
+
+如果您所在的國家於下列圖表中以星號 (*) 標示，且您需父母或監護人同意，則您的父母或監護人將代表您簽署合約。
+
+國家/地區	年齡規定
+安道爾*、阿根廷*、澳洲、奧地利*、巴林、比利時、玻利維亞*、哥斯大黎加*、捷克共和國、丹麥*、多明尼加共和國、厄瓜多、薩爾瓦多*、愛沙尼亞、芬蘭、法國*、希臘*、瓜地馬拉*、宏都拉斯*、香港、冰島、印度、愛爾蘭、以色列、約旦、科威特、拉脫維亞、黎巴嫩、列支敦斯登、盧森堡、馬來西亞*、馬爾他*、墨西哥*、摩納哥*、摩洛哥、紐西蘭、尼加拉瓜*、挪威*、阿曼、巴勒斯坦、巴拿馬*、巴拉圭*、菲律賓*、波蘭*、葡萄牙*、卡達、沙烏地阿拉伯、新加坡、南非、西班牙*、瑞典、瑞士、阿拉伯聯合大公國、土耳其*、英國、烏拉圭、越南	必須年滿 18 歲，13 歲至 18 歲以下則需父母或監護人同意。
+阿爾及利亞	必須年滿 19 歲，13 歲至 19 歲以下則需父母或監護人同意。
+巴西	必須年滿 18 歲，16 歲至 18 歲以下則需父母或監護人同意。
+保加利亞*、哥倫比亞*、智利、匈牙利、祕魯、羅馬尼亞	必須年滿 18 歲，14 歲至 18 歲以下則需父母或監護人同意。
+加拿大	必須年滿 13 歲才能使用免費服務。如需付費訂用，您需達到居住省份或領域內的成人年齡，13 歲或以上則需父母或監護人同意。
+賽普勒斯*、義大利、立陶宛、荷蘭	如要使用免費服務，必須年滿 16 歲，13 歲至 16 歲以下則需父母或監護人同意。如要註冊「付費訂用」，您必須年滿 18 歲，13 歲至 18 歲以下則需父母或監護人同意。
+埃及、印尼	必須年滿 21 歲，13 歲至 21 歲以下則需父母或監護人同意。
+日本、台灣、泰國	必須年滿 20 歲，13 歲至 20 歲以下則需父母或監護人同意。
+斯洛伐克*	必須年滿 16 歲，13 歲至 16 歲以下則需父母或監護人同意。
+突尼西亞	必須年滿 18 歲。
+2 協議的變更
+偶爾我們會酌情變更協議，例如改善現有功能或特色，或是在服務中加入新功能或特色，使用科學技術上的進階技術，適切地對服務進行技術調整，確保服務的可操作性或安全性，同時為了法律或監管上的理由。我們對協進行實質變更後，將適時依據情況向您提供重要的通知，方法包括在本服務內顯示重要通知，或發送電子郵件給您尋求同意。在某些情況下，我們會事先通知您，而且如果您在變更完成之後繼續使用本服務，即視為您接受變更。因此，請務必仔細閱讀任何此類通知。如果您不希望繼續依照新版本的協議使用本服務，可以聯絡我們以終止協議。如果您透過第三方收到「試用」或「付費訂用」，您必須透過該第三方來取消適用的「付費訂用」。
+
+3 享用 Spotify
+本節提供您可全面享用 Spotify 的相關資訊。
+
+3.1 服務選項
+您可以在我們的網站上找到服務選項的說明，我們會在您建立 Spotify 帳號時說明您可以使用哪些服務選項。特定選項會免費提供給您。 不需要付款的 Spotify 服務目前稱為「免費服務」。 其他選項則必須先付款才能取用它們 (「付費訂用」)。我們也可能提供特別促銷方案、會員資格或服務，包括搭配或透過 Spotify 服務提供的第三方產品及服務。我們對該第三方所提供的產品或服務概不負責。依據這些條款，我們保留隨時修改、終止或修訂所提供之訂用方案及促銷優惠的權利。
+
+並非所有使用者皆可使用無限制服務。我們將解釋在您註冊後可使用的服務有哪些。若您取消或是中斷所訂用的無限制服務 (例如：變更付款明細)，您可能無法再次訂用該無限制服務。請注意，未來可能中止無限制服務，如此一來，您無須再為該服務付費。
+
+如果您為存取付費訂用 (「代碼」)而購買或收到了代碼、禮卡、預付優惠，或代表 Spotify 或由其出售的其他優惠，則隨代碼提交給您的額外條款與條件可能適用於您對服務的使用，且您同意遵守該等條款與條件。您也可能透過第三方來購買對付費訂用的取用權。在該等情況下，除了本協議外，第三方的額外條款與條件可能適用於您對服務的使用。
+
+3.2 試用
+我們或代表我們的其他人可能偶爾於特定時期內，提供付費訂用的免費試用或減價優惠試用 (「試用」)。Spotify 可能會決定您是否符合某試用資格，並且在適用法律所允許的限度內隨時撤回或修改試用，恕不另行通知。
+
+我們會針對某些試用，要求您提供您的付款明細以啟動試用。提供該類詳細資料，您即同意我們在試用結束的隔天自動向您收取付費訂用的費用，費用是每月收取或以我們向您事先揭示的另一個間隔時間收取。如果您不想要支付這項費用，假使您是透過 SPOTIFY 來註冊試用，您必須在試用結束前按一下 這裡 來取消適用的付費訂用，或者假使您是透過第三方來收到您的試用，您必須透過該第三方來取消適用的付費訂用。
+
+4 付款、取消與審閱期
+4.1 帳單
+您可以直接從 Spotify 購買付費訂用或透過第三方購買，購買方式有：(1) 每月或以購買前向您揭示的某個其他間隔時間，事先支付訂用費用；或者 (2) 預先付款並獲得特定期間 (「預付期間」) 的 Spotify 服務取用權。
+
+Spotify 可能不定期變更付費訂用的價格，包括週期性的訂用費用、預付期間 (針對尚未付費的期間) 或代碼的價格，並且將事先通知您任何價格變更，以及如何同意這些變更 (如適用)。價格變更將於價格變更日起的下一個訂用期開始生效。在適用法律的約束下，您於價格變更生效後繼續使用 Spotify 服務，即視同接受新價格。如果您不同意價格變更，您有權在價格變更生效之前，取消訂用「付費訂用」以拒絕變更。
+
+如果您註冊「付費訂用」，您可能因為任何理由或不需要理由而改變心意，依據下列條件，在註冊相關服務之日起十四 (14) 天 (「審閱期」) 內，您會收到所有已付款項的全額退費：
+
+如果您註冊「試用」，針對您所收到之「試用」的「付費訂用」，您同意其「審閱期」會在您開始「試用」起的十四 (14) 天後結束。如果您在「試用」結束前未取消「付費訂用」，您即喪失撤回的權利並且授權 Spotify 每月自動向您收取所同意的價格，直到您取消「付費訂用」為止。
+
+如果您購買「付費訂用」且未經「試用」，您即授權 Spotify 每月自動向您收取費用，直到您取消為止。您同意自您購買起有十四 (14) 天的「審閱期」，不過一旦您在此期間使用 Spotify 服務，則該審閱期終止。
+
+4.2 續訂；取消
+除非您已針對「預付期間」購買「付費訂用」，您支付給 Spotify 或向其購買「付費訂用」之第三方的費用將於訂用期結束後自動續約，除非您於目前的訂用期結束前取消您的「付費訂用」，如果您是透過 Spotify 來購買「付費訂用」，您可以按一下 這裡 來取消，或者如果您是透過第三方來購買「付費訂用」，您可以透過該第三方來取消「付費訂用」。取消將於目前訂購期的最後一日之後生效，您將降級為免費服務。如果您是透過 Spotify 來購買您的「付費訂用」，並且 (1) 在審閱期結束後 (如適用)，或 (2) 目前的訂用期結束前，取消付款或付費訂用與/或終止任何協議，我們將不退還任何已支付給我們的訂用費。如果您希望在審閱期結束前從 Spotify 收到所有已付清款項的全額退費，您必須聯繫客戶支援。當我們處理任何退費時，我們會使用您用來付款的方法來退回款項。
+
+如果您購買使用代碼的付費訂用，您的付費訂用將終止於代碼所示之期間結束日，或預付餘額不足以支付服務時自動終止。如果您透過第三方來購買您的「付費訂用」，您必須直接與該第三方辦理取消。
+
+5 使用我們的服務。
+Spotify 服務與內容皆為 Spotify 或 Spotify 之授權人的財產。我們授予您有限、非獨家、可撤銷的許可，以供您享用 Spotify 服務，以及有限、非獨家、可撤銷的許可，以供您就內容進行個人、非商業的使用 (合稱「取用權」)。本取用權持續有效，直至您或 Spotify 終止為止。您承諾並同意使用 Spotify 服務及內容做為個人和非商業用途，且不會轉發或傳送 Spotify 服務或該內容。 即使已安裝於您的個人電腦、行動電話、平板電腦、穿戴式裝置、喇叭與/或其他裝置 (「裝置」)，Spotify 軟體應用程式與其內容並非售予或轉讓給您，且 Spotify 及其授權人保留所有 Spotify 軟體應用程式與內容副本的所有權。
+
+所有 Spotify 的商標、服務標誌、商業名稱、徽標、網域名稱以及 Spotify 品牌的其他特色 (「Spotify 品牌特色」) 為 Spotify 及其授權人的獨有財產。本協議並未授予您使用 Spotify 品牌特色的任何權利，無論是作商業或非商業之用。
+
+您同意遵守我們的 使用者指南，並且不以協議中未明確允許的任何方式使用 Spotify 服務、內容或任何相關的部分。除了這些協議明確授予的權利外，Spotify 並未授予您對 Spotify 服務或內容的任何權利、所有權或利益。
+
+Spotify 服務中所含的第三方軟體 (例如：開放原始碼軟體庫) 是根據相關第三方軟體庫許可條款 (發佈於我們的桌面電腦、行動電話客戶端與/或我們的網站上的說明或設定章節) 供您使用。
+
+6 第三方應用程式及裝置
+Spotify 服務整合有或使用第三方應用程式、網站及服務 (「第三方應用程式」) 及第三方裝置，使您可以取用 Spotify 服務。這些第三方應用程式與裝置可能有本身的使用條款與條件及隱私政策，您所使用的這些第三方軟體與裝置將受該等條款與條件以及隱私政策約束。您理解且同意，Spotify 並未為第三方應用程式與裝置的行為、功能或內容，或是為您可能與任何此類第三方應用程式與裝置供應商進行的任何交易背書且不對其負責或承擔任何責任，Spotify 也不對第三方應用程式及裝置與服務的相容性或持續相容性提供任何保證。
+
+7 使用者生成的內容
+Spotify 使用者可發布、上傳或以其他方式將內容增添至服務中 (可以包括例如圖片、文字、訊息、資訊、播放清單標題、說明與集錦及/或其他類型的內容) (「使用者內容」)。為避免疑義，「使用者內容」包含發佈至 Spotify 支援社群與 Spotify 服務其他部分的相關內容。
+
+您承諾，關於發布至 Spotify 的任何使用者內容：(1) 您擁有或有權發布該使用者內容，且 (2) Spotify 依據本協議發布或使用該使用者內容，並未違反本協議、適用法律或其他人的智慧財產權、公開、人格或其他權利，或在沒有該人或實體的明確書面同意下，暗示為 Spotify 與您或您的使用者內容、藝術家、樂團、標籤、實體或個人之間存在任何從屬關係或背書。
+
+Spotify 可以 (但沒有義務) 監控、檢視或編輯使用者內容。在所有情況下，Spotify 保留基於任何或沒有原因移除或停用存取任何使用者內容的權利，包含 Spotify 自行認定為違反協議的使用者內容。Spotify 可能在未經事先通知您或第三方的情況下採取這些行動。移除或停用對使用者內容的存取應全由我們自行酌情決定，且我們並未承諾移除或停用對任何特定使用者內容的存取。
+
+您全權負責您發布的所有使用者內容。Spotify 不為使用者內容負責，亦不為使用者內容所含的任何意見背書。您同意，如果有人針對您發布的使用者內容向 SPOTIFY 提出索賠，則在當地法律允許之範圍內，您將保障 SPOTIFY 不受因該索賠引起之所有損害、損失以及各種支出 (包含合理的律師費與訴訟費用) 的傷害。
+
+8 您授予我們的權利
+鑒於根據本協議授予您的權利，您授予我們以下權利： (1) 允許 Spotify 服務使用您裝置上的處理器、頻寬與儲存硬體以便利服務的操作、(2) 提供您廣告與其他資訊，以及 (3) 允許我們的業務夥伴亦如此行事。在 Spotify 服務任何部分上，您所取用的內容 (包含其選擇與位置) 可能受商業考量 (包括 Spotify 與第三方的協議) 的影響。由 Spotify 所授權、提供給 Spotify、由 Spotify 所創造或由 Spotify 以其他方式所提供的一些內容 (例如，播客) 可能包含廣告內容。Spotify 服務將不對這些內容作修改，以完整的方式向您呈現。
+
+如果您向 Spotify 提供關於 Spotify 服務或內容的回饋、意見或建議 (「回饋」)，您確認該回饋非機密，且您授權 Spotify 無限制地使用該回饋而不需向您支付費用。回饋視為一種使用者內容的類型。
+
+您授予 Spotify 非獨家、可轉讓、可再授權、免權利金、永久的 (或是在不允許永久授予的行政轄區，為等同於協議期加二十年 (20) 的期限)、不可撤銷、全額付清的全球許可權，以便以任何形式透過任何媒材使用、複製、公開 (例如表演或展示)、出版、翻譯、修改、創作衍生作品，以及發行任何關於本服務的使用者內容，無論做法是單獨還是結合其他內容或資料，是透過任何現在已知還是之後再建立的方式、方法、技術。除了於此明確授予的權利，您保留所有權利的所有權，包括使用者內容中的智慧財產權。在適用時及受相關法律許可之下，您亦同意放棄並不執行任何「著作人格權」或根據適用法律的同等權利，辨識您為任何使用者內容 (包括回饋) 之著作者的權利，以及您反對貶抑處理此類使用者內容的權利。
+
+9 使用者指南
+Spotify 尊重智慧財產權並期望您亦如此。我們已建立了一些讓您在使用本服務時應遵循的基本規則，以確保大家皆能樂享 Spotify。您必須遵循這些規則並鼓勵其他使用者依此辦理。 無論如何皆不允許以下的行為：
+
+影印、再分發、複製、「翻錄」、錄製、傳送、公開展演或展示、廣播，或公開 Spotify 服務或內容的任何部分，或以其他方式使用本協議或相關法律並未明確允許使用的 Spotify 服務或內容，或以其他方式侵犯 Spotify 服務或內容，或其任何部分中存在之智慧財產權 (例如：版權)；
+使用 Spotify 服務，以匯入或複製您並無合法權利匯入或複製的任何本機檔案；
+透過任何方式從獲授權的裝置傳送快取內容副本至任何其他裝置；
+對 Spotify 服務的內容或其任何部分進行逆向工程、反編譯、反匯編、修正或是創作衍生作品 (除非相關法律允許)。[如果適用法律允許您為了獲得創造可與 Spotify 服務或與另一個程式搭配運作之獨立程式的資訊而反編譯 Spotify 服務、內容或其任何部分，您從該等活動所獲得的資訊 (a) 僅能用於前述目的，(b) 在沒有 Spotify 事先書面同意下，不得對於達成該目的而言沒有必要知情的任何第三方披露或傳達，並且 (c) 不得用來創造表現手法與 Spotify 服務或內容之任何部分實質上相似的任何軟體或服務]；
+規避任何 Spotify、其授權人或任何第三方用於保護該內容或服務的技術；
+出售、出租、轉授許可或租賃 Spotify 服務或內容的任何部分；
+規避任何適用於 Spotify 或其授權人的地域限制；
+以人工方式增加播放次數、關注計數或以其他方式操控服務：(i) 使用任何傀儡程式、指令碼或其他自動化程序；(ii) 提供或接受任何形式的報酬 (財務或其他方面) 或 (iii) 任何其他手段；
+移除或變更任何包含於內容或服務或透過服務提供的版權、商標或其他智慧財產權公告 (包括為了偽裝或變更任何內容所有權或來源的標示)；
+提供您的密碼給他人或使用他人的使用者名稱與密碼；
+「編目」 Spotify 服務或以其他方式使用任何自動工具 (包含傀儡程式、抓取程式及蜘蛛程式) 來檢視、取用或收集出自 Spotify 服務的資訊；
+出售使用者帳戶或播放清單，或是以其他方式接受或提供任何報酬、財務或其他，以影響帳戶或播放清單的名稱，或帳戶或播放清單所含的內容；或者
+透過自動工具或以其他方式來人為推銷內容。
+請尊重 Spotify、內容的所有權者，以及 Spotify 服務的其他使用者。請勿從事本身具有或包含以下資料的任何活動、發布任何使用者內容，或註冊與/或使用使用者名稱：
+
+冒犯、侮辱、誹謗、色情、威脅或淫穢的資料；
+非法或意圖助長或進行任何形式非法行為的資料，包含侵犯智慧財產權、隱私權、Spotify 或第三方的專屬權利；
+包含您的密碼或故意包含其他使用者密碼或第三方個人資料，或是意圖徵求此類個人資訊的資料；
+包含惡意內容，例如惡意軟體：木馬程式、病毒，或是以其他方式干擾其他使用者存取服務的資料；
+意圖或故意騷擾或恐嚇其他使用者的資料；
+冒充或謊稱您與其他使用者、個人或實體存在關聯，或是以其他方式詐騙、偽造、欺詐或誤導的資料；
+涉及不請自來的群組郵件或其他形式的垃圾郵件 (「垃圾郵件」)、廣告郵件、連鎖信件或類似信件；
+涉及未經 Spotify 明確授權的商業或銷售活動 (例如：廣告、促銷、競賽、抽獎或直銷) 的資料；
+連結、引用或以其他方式宣傳商品或服務的資料，但由 Spotify 明確授權者除外；
+干擾或以任何方式中斷 Spotify 服務、竄改、破壞或企圖探查、掃描或測試服務或 Spotify 電腦系統、網路、使用規則或任何 Spotify 的安全組件、認證措施或其他任何適用於服務、內容或其任何部分防護措施漏洞的資料；或
+Spotify 裁定為與協議產生衝突的資料。
+您確認並同意，發布此類任何使用者內容將違反使用者指南 (或是 Spotify 合理相信這些使用者指南受到違反)，並可能導致立即注銷或暫銷您的 Spotify 帳戶。若您已違反本協議，您亦同意 Spotify 也可能在合情合理的情況下要求收回您的使用者名稱。
+
+請深思如何使用 Spotify 服務以及您所分享的內容。Spotify 服務包含社交與互動功能，包括：發布使用者內容、分享內容以及公開關於您特定資訊的功能。請謹記，分享或公開的資訊可能遭其他使用者在網路或於 Spotify 上使用或再分享，所以請小心使用 Spotify 並注意您的帳戶設定。 Spotify 對您所選擇要發佈在服務上的資料概不負責。
+
+您的密碼保護您的使用者帳戶，且您全權負責維護您密碼的保密與安全。您瞭解您全權負責在本服務上使用的使用者名稱與密碼 (包括任何未經授權的使用)。如果您的使用者名稱或密碼遺失或被盜，或是如果您認為第三方未經授權進入您的帳戶，您必須立即通知我們並盡速變更密碼。
+
+10 侵權與舉報使用者內容
+Spotify 尊重智慧財產所有人的權利。如果您認為任何內容侵犯了您的智慧財產權或其他權利，請參閱 Spotify 版權政策。如果 Spotify 收到版權持有者關於任何內容侵犯了版權的通知 (使用 Spotify 所提供的表格)，Spotify 可全權決定從服務中移除該內容，或採取 Spotify 認為適當的其他步驟，無須事先通知提供或發佈該內容之使用者或其他方。如果該使用者或其他方認為該內容並未侵權，他或她在某些情況下可以向 Spotify 提交回復通知 (counter-notification)，要求還原已移除的內容，但 Spotify 有全權決定遵照或不遵照該要求辦理。
+
+如果您認為有任何內容未遵循使用者指南，請填寫我們的 通知表格。
+
+11 服務限制與修改
+Spotify 將盡可能努力維持 Spotify 服務的運作。然而，為了反映相關法律或監管要求，偶爾會遇到特定的技術困難、需要維護或測試，或是更新，這都可能導致不定時的暫時中斷。Spotify 保留因為合理理由、法律及監管理由而定期及隨時修改或中止 (暫時或永久) Spotify 服務之功能或特色的權利，並且在可行時事先通知您，並在以上所有狀況下均不承擔對您的任何法律責任，除了法律禁止者外， 合理理由例如：在實際中斷、修改或中止 Spotify 服務或其任何功能或特色的情況下，或者需要修復、維護或改善現有功能或特色，或者需要增加新功能或特色至服務中，或者需要落實科學及技術上的進步或確保服務的可操作性或安全性。
+
+儘管有前述規定，若您已向 Spotify 預付付費訂用之費用，但 Spotify 於預付期間結束之前永久中止 (如「付款、取消與審閱期」一節所定義)，Spotify 將於該中止後退還預付期間的預付款。您理解、同意並接受，Spotify 會作出合理努力，儘管其沒有義務維護、支援、升級或更新服務，或是透過服務提供所有或任何特定內容。Spotify 及/或任何內容擁有人可以不定時移除任何該類內容而無須通知。 本節將於相關法律的允許範圍內執行。
+
+12 品牌帳戶
+若您代表一個公司、組織、實體或品牌 (「品牌」，該帳戶即為「品牌帳戶」) 建立 Spotify 帳戶，在整個協議中所使用之「您」與「您的」一詞適用於您與該品牌。若您開設了一個品牌帳戶，您聲明並保證已獲授權可授予協議規定的所有權限與許可，並將該品牌與協議結合。
+
+品牌可以關注使用者、創造及分享播放清單，先決條件是品牌未採取任何行動，暗示品牌與受關注使用者、藝術家、歌曲作家或任何其他人有背書或商業關係，除非品牌獨立獲得暗示該背書的權利。此外，關於披露提供給藝術家、歌曲作家、使用者或任何其他方的任何代言或報酬，品牌必須對我們的使用者透明公開，並且在從事前述行為時必須符合所有適用法律、規範及行為守則。
+
+13 Spotify 支援社群
+Spotify 支援社群是進行關於 Spotify 服務之資訊、秘訣，以及其他資料的討論與交流的地方。使用 Spotify 支援社群，即表示您同意 社群條款。
+
+14 客戶支援
+對於帳戶相關與付款相關之問題的客戶支援 (「客戶支援詢問」)，請使用網站上「關於我們」一節的客服 聯絡表格，向客服部提交請求。我們會使用合理努力在合理時程內回應所有客戶支援問題，但我們無法保證在任何特定時程內回應任何客戶支援問題，且/或我們能夠回答任何該等問題。
+
+15 匯出管制
+Spotify 產品可能受到美國出口與轉出口管制法律與規定，或其他司法管轄區內類似的相關法律約束，這些法律包括美國商務部制定的出口管理條例 ("EAR")、財政部海外資産管制局 ("OFAC") 訂定的貿易與經濟制裁，以及國務院制定的國際武器交易條例 ("ITAR")。保證您並非位於 (1) 美國已禁運貨物或以任何方式施加經濟制裁的任何國家；且 (2) 任何適用出口或轉出口法律或法規或其他管轄區之適用類似法律中所註明的拒絕往來方。
+
+您同意遵循所有適用的出口與轉出口管理法律與規定，包括 EAR、OFAC 制定的貿易與經濟制裁以及 ITAR。具體而言，您同意在未根據相關法律與規定要求，事先取得具管轄權之政府主管機關的授權之下，不得直接或間接販售、出口、轉出口、運送、轉移，或以其他方式處理任何根據協議收到來自 Spotify 的產品、軟體或技術 (包含源自或根據此類技術的產品) 至美國或其他司法管轄區相關法律或規定所禁止的任何目的地、實體或個人。</value>
+  </data>
+</root>
