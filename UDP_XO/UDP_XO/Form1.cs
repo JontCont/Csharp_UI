@@ -63,15 +63,15 @@ namespace UDP_XO
         //監聽副程序
         private void Listen()
         {
-            int Port = int.Parse("8000"); //設定監聽用的通訊埠
-            Label5.Text = "My Port : " + Port;
+            int Port = int.Parse(bunifuTextBox1.Text); //設定監聽用的通訊埠
+            //Label5.Text = "Port :" + Port;
             U = new UdpClient(Port); //建立UDP監聽器
             IPEndPoint EP = new IPEndPoint(IPAddress.Parse("127.0.0.1"), Port); //建立監聽端點資訊
             while (true) //持續監聽的無限迴圈→有訊息(True)就處理，無訊息就等待！
             {
                 byte[] B = U.Receive(ref EP);//接收網路訊息
                 string A = Encoding.Default.GetString(B);//翻譯為棋盤狀態字串
-                if (chk(A)) MessageBox.Show("你贏了！","訊息");//如果有連線
+                if (chk(A)) MessageBox.Show("你輸了！","訊息");//如果有連線
                 char[] C = A.ToCharArray();//拆解字串為字元陣列
                 for (int i = 0; i < 9; i++)
                 {
@@ -144,7 +144,7 @@ namespace UDP_XO
             }
             if (chk(A))
             {
-                if (chk(A)) MessageBox.Show("你輸了！","訊息");//如果有連線
+                if (chk(A)) MessageBox.Show("你贏了！", "訊息");//如果有連線
             }
             int Port = int.Parse(TextBox2.Text);//取得通訊埠
             UdpClient S = new UdpClient(TextBox1.Text, Port);//建立通訊物件
@@ -165,5 +165,9 @@ namespace UDP_XO
             }
         }
 
+        private void Label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

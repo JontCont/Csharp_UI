@@ -117,48 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="bunifuFormDock1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="bunifuTextBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAGQAAAAjCAYAAABiv6+AAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACKSURBVGhD7dExDQMxAARB80fll2EERgDkZclNEHiLWema
-        a2co2FrrM+f82b1tg8Mxxj50t21wOIAUAhILSCwgsYDEAhILSCwgsYDEAhILSCwgsYDEAhILSCwgsYDE
-        AhILSCwgsYDEAhILSCwgsYDEAhILSCwgsYDEAhLrD+R5nu8+7N62weFQpzFeylOZlm9dWCMAAAAASUVO
-        RK5CYII=
-</value>
-  </data>
-  <data name="TextBox2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAGQAAAAjCAYAAABiv6+AAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACKSURBVGhD7dExDQMxAARB80fll2EERgDkZclNEHiLWema
-        a2co2FrrM+f82b1tg8Mxxj50t21wOIAUAhILSCwgsYDEAhILSCwgsYDEAhILSCwgsYDEAhILSCwgsYDE
-        AhILSCwgsYDEAhILSCwgsYDEAhILSCwgsYDEAhLrD+R5nu8+7N62weFQpzFeylOZlm9dWCMAAAAASUVO
-        RK5CYII=
-</value>
-  </data>
-  <data name="bunifuButton1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAALcAAAAsCAYAAAAnzykfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADtSURBVHhe7dLBCUJRAAPBV4hYoNXYig1+RdijDRgmMLcc
-        95hN7/a8Hvfn+w0Lvj2X9jm/DvDPSlvc7CltcbOntMXNntIWN3tKW9zsKW1xs6e0xc2e0hY3e0pb3Owp
-        bXGzp7TFzZ7SFjd7Slvc7CltcbOntMXNntIWN3tKW9zsKW1xs6e0xc2e0hY3e0pb3OwpbXGzp7TFzZ7S
-        Fjd7Slvc7CltcbOntMXNntIWN3tKW9zsKW1xs6e0xc2e0hY3e0pb3OwpbXGzp7TFzZ7SFjd7Slvc7Clt
-        cbOntMXNntL+xn29fh3gP12v0jZb3DkfWepabETVYpwAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="TextBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJoAAAAjCAYAAABsOhOqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACWSURBVHhe7dKxDcMwAANB7T+VDI2RMTJADAFq0ttf3QFs
-        WP+AzFrrM+f8mT293dbJbIx9wBt2WyczofEeoZEQGgmhkRAaCaGREBoJoZEQGgmhkRAaCaGREBoJoZEQ
-        GgmhkRAaCaGREBoJoZEQGgmhkRAaCaGREBoJoZEQGgmhkRAaCaGR+Avtuq7vPsye3m7rZAZvG+MGYfsH
-        ppRbBa0AAAAASUVORK5CYII=
-</value>
-  </data>
-  <metadata name="imageList1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>174, 17</value>
-  </metadata>
 </root>
