@@ -1,0 +1,17 @@
+C:\Users\JontCont\source\repos\TCP_games\TCP_games\bin\Debug\TCP_games.exe.config
+C:\Users\JontCont\source\repos\TCP_games\TCP_games\bin\Debug\TCP_games.exe
+C:\Users\JontCont\source\repos\TCP_games\TCP_games\bin\Debug\TCP_games.pdb
+C:\Users\JontCont\source\repos\TCP_games\TCP_games\bin\Debug\MetroFramework.Design.dll
+C:\Users\JontCont\source\repos\TCP_games\TCP_games\bin\Debug\MetroFramework.dll
+C:\Users\JontCont\source\repos\TCP_games\TCP_games\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\JontCont\source\repos\TCP_games\TCP_games\obj\Debug\TCP_games.csprojAssemblyReference.cache
+C:\Users\JontCont\source\repos\TCP_games\TCP_games\obj\Debug\TCP_games.Form1.resources
+C:\Users\JontCont\source\repos\TCP_games\TCP_games\obj\Debug\TCP_games.Properties.Resources.resources
+C:\Users\JontCont\source\repos\TCP_games\TCP_games\obj\Debug\TCP_games.csproj.GenerateResource.cache
+C:\Users\JontCont\source\repos\TCP_games\TCP_games\obj\Debug\TCP_games.csproj.CopyComplete
+C:\Users\JontCont\source\repos\TCP_games\TCP_games\obj\Debug\TCP_games.exe
+C:\Users\JontCont\source\repos\TCP_games\TCP_games\obj\Debug\TCP_games.pdb
+C:\Users\JontCont\source\repos\TCP_games\TCP_games\bin\Debug\Microsoft.VisualBasic.PowerPacks.Design.dll
+C:\Users\JontCont\source\repos\TCP_games\TCP_games\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\JontCont\source\repos\TCP_games\TCP_games\bin\Debug\zh-Hant\Microsoft.VisualBasic.PowerPacks.resources.dll
+C:\Users\JontCont\source\repos\TCP_games\TCP_games\bin\Debug\zh-Hant\Microsoft.VisualBasic.PowerPacks.Design.resources.dll

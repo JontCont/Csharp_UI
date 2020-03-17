@@ -1,0 +1,9 @@
+C:\Users\JontCont\source\repos\TCP_games\TCP_Server\bin\Debug\TCP_Server.exe.config
+C:\Users\JontCont\source\repos\TCP_games\TCP_Server\bin\Debug\TCP_Server.exe
+C:\Users\JontCont\source\repos\TCP_games\TCP_Server\bin\Debug\TCP_Server.pdb
+C:\Users\JontCont\source\repos\TCP_games\TCP_Server\obj\Debug\TCP_Server.csprojAssemblyReference.cache
+C:\Users\JontCont\source\repos\TCP_games\TCP_Server\obj\Debug\TCP_Server.Form1.resources
+C:\Users\JontCont\source\repos\TCP_games\TCP_Server\obj\Debug\TCP_Server.Properties.Resources.resources
+C:\Users\JontCont\source\repos\TCP_games\TCP_Server\obj\Debug\TCP_Server.csproj.GenerateResource.cache
+C:\Users\JontCont\source\repos\TCP_games\TCP_Server\obj\Debug\TCP_Server.exe
+C:\Users\JontCont\source\repos\TCP_games\TCP_Server\obj\Debug\TCP_Server.pdb
