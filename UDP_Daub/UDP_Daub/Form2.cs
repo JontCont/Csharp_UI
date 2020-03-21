@@ -146,12 +146,14 @@ namespace UDP_Daub
 
         private void button2_Click(object sender, EventArgs e)
         {
-            C.Visible = false;
+            C.Shapes.Clear();
+            D.Shapes.Clear();
+          /* C.Visible = false;
             D.Visible = false;
             C = new ShapeContainer();//建立畫布(本機繪圖用)
             this.Controls.Add(C);//加入畫布C到表單
             D = new ShapeContainer();//建立畫布(遠端繪圖用)
-            this.Controls.Add(D);//加入畫布D到表單
+            this.Controls.Add(D);//加入畫布D到表單*/
         }
     }
 }
