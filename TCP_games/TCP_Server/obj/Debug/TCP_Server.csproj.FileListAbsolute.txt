@@ -7,3 +7,12 @@ C:\Users\JontCont\source\repos\TCP_games\TCP_Server\obj\Debug\TCP_Server.Propert
 C:\Users\JontCont\source\repos\TCP_games\TCP_Server\obj\Debug\TCP_Server.csproj.GenerateResource.cache
 C:\Users\JontCont\source\repos\TCP_games\TCP_Server\obj\Debug\TCP_Server.exe
 C:\Users\JontCont\source\repos\TCP_games\TCP_Server\obj\Debug\TCP_Server.pdb
+E:\GIT\Csharp_UI\TCP_games\TCP_Server\bin\Debug\TCP_Server.exe.config
+E:\GIT\Csharp_UI\TCP_games\TCP_Server\bin\Debug\TCP_Server.exe
+E:\GIT\Csharp_UI\TCP_games\TCP_Server\bin\Debug\TCP_Server.pdb
+E:\GIT\Csharp_UI\TCP_games\TCP_Server\obj\Debug\TCP_Server.csprojAssemblyReference.cache
+E:\GIT\Csharp_UI\TCP_games\TCP_Server\obj\Debug\TCP_Server.Form1.resources
+E:\GIT\Csharp_UI\TCP_games\TCP_Server\obj\Debug\TCP_Server.Properties.Resources.resources
+E:\GIT\Csharp_UI\TCP_games\TCP_Server\obj\Debug\TCP_Server.csproj.GenerateResource.cache
+E:\GIT\Csharp_UI\TCP_games\TCP_Server\obj\Debug\TCP_Server.exe
+E:\GIT\Csharp_UI\TCP_games\TCP_Server\obj\Debug\TCP_Server.pdb

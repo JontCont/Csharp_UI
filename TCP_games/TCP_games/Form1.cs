@@ -18,59 +18,15 @@ namespace TCP_games
     public partial class Form1 : MetroFramework.Forms.MetroForm
     {
         //------------------------------------------//
-        ShapeContainer CVS;
-        byte[,] S;//對應棋盤狀態的陣列：0為空格，1為黑子，2為白子
-                  //公用變數
+        //ShapeContainer CVS;
+        //byte[,] S;//對應棋盤狀態的陣列：0為空格，1為黑子，2為白子
+        //公用變數
         Socket T;//通訊物件
         Thread Th;//網路監聽執行緒
         string User;//使用者
 
-        //------------------------------------------//
-        public Form1()
-        {
-            InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            Bitmap bg = new Bitmap(570, 570); //棋盤影像物件
-            Graphics g = Graphics.FromImage(bg); //棋盤影像繪圖物件
-            g.Clear(Color.White); //設白色為背景色
-            for (int i = 15; i <= 555; i += 30)
-            { g.DrawLine(Pens.Black, i, 15, i, 555); } //畫19條垂直線
-            for (int j = 15; j <= 555; j += 30)
-            { g.DrawLine(Pens.Black, 15, j, 555, j); } //畫19條垂直線
-            panel2.BackgroundImage = bg; //貼上棋盤影像為Panel1的背景
-            CVS = new ShapeContainer(); //宣告畫布物件
-            panel2.Controls.Add(CVS); //畫布物件加入Panel1
-            S = new byte[19, 19];//宣告棋盤資訊陣列
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Control.CheckForIllegalCrossThreadCalls = false; //忽略跨執行緒操作的錯誤
-            User = textBox3.Text;  //使用者名稱
-            string IP = textBox1.Text;//伺服器IP
-            int Port = int.Parse(textBox2.Text);  //伺服器Port
-            try
-            {
-                IPEndPoint EP = new IPEndPoint(IPAddress.Parse(IP), Port);//建立伺服器端點資訊
-                //建立TCP通訊物件
-                T = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-                T.Connect(EP); //連上Server的EP端點(類似撥號連線)
-                Th = new Thread(Listen); //建立監聽執行緒
-                Th.IsBackground = true; //設定為背景執行緒
-                Th.Start(); //開始監聽
-                textBox4.Text = "已連線伺服器！" + "\r\n";
-                Send("0" + User); //隨即傳送自己的 UserName 給 Server
-                button1.Enabled = false; //讓連線按鍵失效，避免重複連線
-            }
-            catch
-            {
-                textBox4.Text = "無法連上伺服器！" + "\r\n";  //連線失敗時顯示訊息
-            }
-        }
-        //送出訊息
+        //------------------Sub------------------------//
+        //送出訊息給server
         private void Send(string Str)
         {
             byte[] B = Encoding.Default.GetBytes(Str); //翻譯文字成Byte陣列
@@ -100,6 +56,7 @@ namespace TCP_games
                     button1.Enabled = true;//連線按鍵恢復可用
                     Th.Abort();//刪除執行緒
                 }
+
                 Msg = Encoding.Default.GetString(B, 0, inLen); //解讀完整訊息
                 St = Msg.Substring(0, 1); //取出命令碼 (第一個字)
                 Str = Msg.Substring(1); //取出命令碼之後的訊息   
@@ -113,8 +70,60 @@ namespace TCP_games
                             listBox1.Items.Add(M[i]); //逐一加入名單
                         }
                         break;
+                    case "1"://接收廣播訊息
+                        TextBox5.Text += "(公開)" + Str + "\r\n";//顯示訊息並換行
+                        textBox1.SelectionStart = textBox1.Text.Length; //游標移到最後
+                        textBox1.ScrollToCaret(); //捲動到游標位置
+                        break;
                 }
             }
+        }
+        //---------------------------------------------//
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Control.CheckForIllegalCrossThreadCalls = false; //忽略跨執行緒操作的錯誤
+            User = textBox3.Text;  //使用者名稱
+            string IP = textBox1.Text;//伺服器IP
+            int Port = int.Parse(textBox2.Text);  //伺服器Port
+            try
+            {
+                IPEndPoint EP = new IPEndPoint(IPAddress.Parse(IP), Port);//建立伺服器端點資訊
+                //建立TCP通訊物件
+                T = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+                T.Connect(EP); //連上Server的EP端點(類似撥號連線)
+                Th = new Thread(Listen); //建立監聽執行緒
+                Th.IsBackground = true; //設定為背景執行緒
+                Th.Start(); //開始監聽
+                textBox4.Text = "已連線伺服器！" + "\r\n";
+                Send("0" + User); //隨即傳送自己的 UserName 給 Server
+                button1.Enabled = false; //讓連線按鍵失效，避免重複連線
+            }
+            catch
+            {
+                textBox4.Text = "無法連上伺服器！" + "\r\n";  //連線失敗時顯示訊息
+            }
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+                Send("9" + User); //傳送自己的離線訊息給伺服器
+                T.Close(); //關閉網路通訊器
+        }
+
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
+            if (TextBox5.Text == "") return; //未輸入訊息不傳送資料
+            Send("1" + User + "公告：" + TextBox5.Text);   
         }
     }
 }

@@ -42,7 +42,16 @@
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.TextBox6 = new MetroFramework.Controls.MetroTextBox();
+            this.TextBox5 = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.metroPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -50,7 +59,7 @@
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.Location = new System.Drawing.Point(25, 178);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(66, 22);
             this.button1.TabIndex = 0;
@@ -65,7 +74,7 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 12;
             this.listBox1.Location = new System.Drawing.Point(25, 243);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(2);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(92, 112);
             this.listBox1.TabIndex = 1;
@@ -75,7 +84,7 @@
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.Location = new System.Drawing.Point(25, 418);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 21);
             this.button2.TabIndex = 2;
@@ -87,7 +96,7 @@
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.Location = new System.Drawing.Point(25, 44);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(92, 22);
             this.textBox1.TabIndex = 3;
@@ -98,7 +107,7 @@
             this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox2.Location = new System.Drawing.Point(25, 98);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(67, 22);
             this.textBox2.TabIndex = 4;
@@ -109,7 +118,7 @@
             this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox3.Location = new System.Drawing.Point(25, 153);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(92, 22);
             this.textBox3.TabIndex = 5;
@@ -119,7 +128,7 @@
             this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox4.Location = new System.Drawing.Point(25, 394);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(76, 22);
             this.textBox4.TabIndex = 6;
@@ -200,35 +209,148 @@
             this.panel1.Controls.Add(this.textBox4);
             this.panel1.Controls.Add(this.textBox3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(705, 48);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Location = new System.Drawing.Point(782, 60);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(137, 454);
+            this.panel1.Size = new System.Drawing.Size(137, 599);
             this.panel1.TabIndex = 12;
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.panel3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(15, 48);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Location = new System.Drawing.Point(15, 60);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(690, 454);
+            this.panel2.Size = new System.Drawing.Size(767, 599);
             this.panel2.TabIndex = 13;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.metroPanel1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(0, 418);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(767, 181);
+            this.panel3.TabIndex = 0;
+            // 
+            // metroPanel1
+            // 
+            this.metroPanel1.Controls.Add(this.metroLabel1);
+            this.metroPanel1.Controls.Add(this.TextBox5);
+            this.metroPanel1.Controls.Add(this.TextBox6);
+            this.metroPanel1.Controls.Add(this.metroButton1);
+            this.metroPanel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.metroPanel1.HorizontalScrollbarBarColor = true;
+            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel1.HorizontalScrollbarSize = 10;
+            this.metroPanel1.Location = new System.Drawing.Point(399, 0);
+            this.metroPanel1.Name = "metroPanel1";
+            this.metroPanel1.Size = new System.Drawing.Size(368, 181);
+            this.metroPanel1.TabIndex = 1;
+            this.metroPanel1.VerticalScrollbarBarColor = true;
+            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel1.VerticalScrollbarSize = 10;
+            // 
+            // metroButton1
+            // 
+            this.metroButton1.Location = new System.Drawing.Point(285, 155);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(75, 23);
+            this.metroButton1.TabIndex = 2;
+            this.metroButton1.Text = " Send";
+            this.metroButton1.UseSelectable = true;
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
+            // 
+            // TextBox6
+            // 
+            // 
+            // 
+            // 
+            this.TextBox6.CustomButton.Image = null;
+            this.TextBox6.CustomButton.Location = new System.Drawing.Point(254, 1);
+            this.TextBox6.CustomButton.Name = "";
+            this.TextBox6.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.TextBox6.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.TextBox6.CustomButton.TabIndex = 1;
+            this.TextBox6.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.TextBox6.CustomButton.UseSelectable = true;
+            this.TextBox6.CustomButton.Visible = false;
+            this.TextBox6.Lines = new string[0];
+            this.TextBox6.Location = new System.Drawing.Point(3, 155);
+            this.TextBox6.MaxLength = 32767;
+            this.TextBox6.Name = "TextBox6";
+            this.TextBox6.PasswordChar = '\0';
+            this.TextBox6.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.TextBox6.SelectedText = "";
+            this.TextBox6.SelectionLength = 0;
+            this.TextBox6.SelectionStart = 0;
+            this.TextBox6.ShortcutsEnabled = true;
+            this.TextBox6.Size = new System.Drawing.Size(276, 23);
+            this.TextBox6.TabIndex = 3;
+            this.TextBox6.UseSelectable = true;
+            this.TextBox6.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.TextBox6.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // TextBox5
+            // 
+            // 
+            // 
+            // 
+            this.TextBox5.CustomButton.Image = null;
+            this.TextBox5.CustomButton.Location = new System.Drawing.Point(253, 2);
+            this.TextBox5.CustomButton.Name = "";
+            this.TextBox5.CustomButton.Size = new System.Drawing.Size(101, 101);
+            this.TextBox5.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.TextBox5.CustomButton.TabIndex = 1;
+            this.TextBox5.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.TextBox5.CustomButton.UseSelectable = true;
+            this.TextBox5.CustomButton.Visible = false;
+            this.TextBox5.Lines = new string[0];
+            this.TextBox5.Location = new System.Drawing.Point(3, 43);
+            this.TextBox5.MaxLength = 32767;
+            this.TextBox5.Multiline = true;
+            this.TextBox5.Name = "TextBox5";
+            this.TextBox5.PasswordChar = '\0';
+            this.TextBox5.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.TextBox5.SelectedText = "";
+            this.TextBox5.SelectionLength = 0;
+            this.TextBox5.SelectionStart = 0;
+            this.TextBox5.ShortcutsEnabled = true;
+            this.TextBox5.Size = new System.Drawing.Size(357, 106);
+            this.TextBox5.TabIndex = 4;
+            this.TextBox5.UseSelectable = true;
+            this.TextBox5.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.TextBox5.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.Location = new System.Drawing.Point(11, 10);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(51, 19);
+            this.metroLabel1.TabIndex = 5;
+            this.metroLabel1.Text = "聊天室";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(857, 518);
+            this.ClientSize = new System.Drawing.Size(934, 675);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
-            this.Padding = new System.Windows.Forms.Padding(15, 48, 15, 16);
+            this.Padding = new System.Windows.Forms.Padding(15, 60, 15, 16);
             this.Text = "Games";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.metroPanel1.ResumeLayout(false);
+            this.metroPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -249,6 +371,12 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private MetroFramework.Controls.MetroPanel metroPanel1;
+        private MetroFramework.Controls.MetroLabel metroLabel1;
+        private MetroFramework.Controls.MetroTextBox TextBox5;
+        private MetroFramework.Controls.MetroTextBox TextBox6;
+        private MetroFramework.Controls.MetroButton metroButton1;
     }
 }
 
