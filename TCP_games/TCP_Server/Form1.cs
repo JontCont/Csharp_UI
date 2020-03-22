@@ -72,6 +72,9 @@ namespace TCP_Server
                         case "1"://使用者傳送訊息給所有人
                             SendAll(Msg); //廣播訊息
                             break;
+                        case "2"://使用者傳送訊息給所有人
+                            SendAll(Msg); //廣播訊息
+                            break;
                         default://使用者傳送私密訊息
                             string[] C = Str.Split('|'); //切開訊息與收件者
                             SendTo(Cmd + C[0], C[1]); //C[0]是訊息，C[1]是收件者
