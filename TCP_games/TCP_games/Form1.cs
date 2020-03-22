@@ -29,8 +29,12 @@ namespace TCP_games
         //送出訊息給server
         private void Send(string Str)
         {
-            byte[] B = Encoding.Default.GetBytes(Str); //翻譯文字成Byte陣列
-            T.Send(B, 0, B.Length, SocketFlags.None); //傳送訊息給伺服器
+            try { 
+                byte[] B = Encoding.Default.GetBytes(Str); //翻譯文字成Byte陣列
+                T.Send(B, 0, B.Length, SocketFlags.None); //傳送訊息給伺服器
+            } 
+            catch { }
+            
         }
 
         //監聽 Server 訊息 (Listening to the Server)
@@ -52,7 +56,7 @@ namespace TCP_games
                 {
                     T.Close();//關閉通訊器
                     listBox1.Items.Clear();//清除線上名單
-                    MessageBox.Show("伺服器斷線了！");//顯示斷線
+                    MessageBox.Show("伺服器斷線了！","注意", MessageBoxButtons.OK, MessageBoxIcon.Information);//顯示斷線
                     button1.Enabled = true;//連線按鍵恢復可用
                     Th.Abort();//刪除執行緒
                 }
@@ -70,10 +74,22 @@ namespace TCP_games
                             listBox1.Items.Add(M[i]); //逐一加入名單
                         }
                         break;
-                    case "1"://接收廣播訊息
+                    //接收廣播訊息
+                    case "1":
                         TextBox5.Text += "(公開)" + Str + "\r\n";//顯示訊息並換行
                         textBox1.SelectionStart = textBox1.Text.Length; //游標移到最後
                         textBox1.ScrollToCaret(); //捲動到游標位置
+                        break;
+                    case "2":
+                        TextBox7.Text += "(公開)" + Str + "\r\n";//顯示訊息並換行
+                        textBox1.SelectionStart = textBox1.Text.Length; //游標移到最後
+                        textBox1.ScrollToCaret(); //捲動到游標位置
+                        break;
+                    //接收私密訊息
+                    case "3":
+                        TextBox5.Text += "(私密)" + Str + "\r\n";//顯示訊息並換行
+                        textBox1.SelectionStart = textBox1.Text.Length;//游標移到最後
+                        textBox1.ScrollToCaret();//捲動到游標位置
                         break;
                 }
             }
@@ -86,7 +102,6 @@ namespace TCP_games
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -97,16 +112,26 @@ namespace TCP_games
             int Port = int.Parse(textBox2.Text);  //伺服器Port
             try
             {
-                IPEndPoint EP = new IPEndPoint(IPAddress.Parse(IP), Port);//建立伺服器端點資訊
-                //建立TCP通訊物件
-                T = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-                T.Connect(EP); //連上Server的EP端點(類似撥號連線)
-                Th = new Thread(Listen); //建立監聽執行緒
-                Th.IsBackground = true; //設定為背景執行緒
-                Th.Start(); //開始監聽
-                textBox4.Text = "已連線伺服器！" + "\r\n";
-                Send("0" + User); //隨即傳送自己的 UserName 給 Server
-                button1.Enabled = false; //讓連線按鍵失效，避免重複連線
+                //button1.Enabled = false; //讓連線按鍵失效，避免重複連線
+                if (button1.Text.Equals("Sign in"))
+                {
+                    IPEndPoint EP = new IPEndPoint(IPAddress.Parse(IP), Port);//建立伺服器端點資訊
+                                                                              //建立TCP通訊物件
+                    T = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+                    T.Connect(EP); //連上Server的EP端點(類似撥號連線)
+                    Th = new Thread(Listen); //建立監聽執行緒
+                    Th.IsBackground = true; //設定為背景執行緒
+                    Th.Start(); //開始監聽
+                    textBox4.Text = "已連線伺服器！" + "\r\n";
+                    Send("0" + User); //隨即傳送自己的 UserName 給 Server
+                    button1.Text = "Sign out";
+                }
+                else if(button1.Text.Equals("Sign out")) 
+                {
+                    Send("9" + User);
+                    T.Close(); //關閉網路通訊器
+                    button1.Text = "Sign in";
+                }
             }
             catch
             {
@@ -116,14 +141,78 @@ namespace TCP_games
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
+            try
+            {
                 Send("9" + User); //傳送自己的離線訊息給伺服器
-                T.Close(); //關閉網路通訊器
+                T.Close(); //關閉網路通訊器  
+            }
+            catch { }
         }
 
         private void metroButton1_Click(object sender, EventArgs e)
         {
-            if (TextBox5.Text == "") return; //未輸入訊息不傳送資料
-            Send("1" + User + "公告：" + TextBox5.Text);   
+            if (TextBox6.Text == "") return; //未輸入訊息不傳送資料
+            if (listBox1.SelectedIndex < 0)//未選取傳送對象(廣播)，命令碼：1
+            {
+                Send("1" + User + "：" + TextBox6.Text);
+            }
+            else//有選取傳送對象(私密訊息)，命令碼：2
+            {
+                Send("3" + "來自" + User + ": " + TextBox6.Text + "|" + listBox1.SelectedItem);
+                TextBox5.Text += "私密" + listBox1.SelectedItem + "： " + TextBox6.Text + "\r\n";
+            }
+            TextBox6.Text = ""; //清除發言框
+        }
+
+        private void TextBox6_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) 
+            {
+                if (TextBox6.Text == "") return; //未輸入訊息不傳送資料
+                if (listBox1.SelectedIndex < 0)//未選取傳送對象(廣播)，命令碼：1
+                {
+                    Send("1" + User + "：" + TextBox6.Text);
+                }
+                else//有選取傳送對象(私密訊息)，命令碼：2
+                {
+                    Send("3" + "來自" + User + ": " + TextBox6.Text + "|" + listBox1.SelectedItem);
+                    TextBox5.Text += "告訴" + listBox1.SelectedItem + "： " + TextBox6.Text + "\r\n";
+                }
+                TextBox6.Text = ""; //清除發言框
+                e.SuppressKeyPress = true; //SuppressKeyPress和Hanld都可以设置
+            }
+        }
+
+        private void metroButton2_Click(object sender, EventArgs e)
+        {
+            if (TextBox8.Text == "") return; //未輸入訊息不傳送資料
+            if (listBox1.SelectedIndex < 0)//未選取傳送對象(廣播)，命令碼：1
+            {
+                Send("2" + User + "公告：" + TextBox8.Text);
+            }
+            else
+            {
+                TextBox8.Enabled = false;
+            }
+            TextBox8.Text = ""; //清除發言框
+        }
+
+        private void TextBox8_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (TextBox8.Text == "") return; //未輸入訊息不傳送資料
+                if (listBox1.SelectedIndex < 0)//未選取傳送對象(廣播)，命令碼：1
+                {
+                    Send("2" + User + "公告：" + TextBox8.Text);
+                }
+                else//有選取傳送對象(私密訊息)，命令碼：2
+                {
+                    TextBox8.Enabled = false;
+                }
+                TextBox8.Text = ""; //清除發言框
+                e.SuppressKeyPress = true; //SuppressKeyPress和Hanld都可以设置
+            }
         }
     }
 }
