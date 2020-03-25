@@ -102,6 +102,11 @@ namespace TCP_games
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            C = new ShapeContainer();//建立畫布(本機繪圖用)
+            metroPanel2.Controls.Add(C);
+            D = new ShapeContainer();//建立畫布(遠端繪圖用)
+            metroPanel2.Controls.Add(D);//加入畫布D到表單
+          
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -213,6 +218,49 @@ namespace TCP_games
                 TextBox8.Text = ""; //清除發言框
                 e.SuppressKeyPress = true; //SuppressKeyPress和Hanld都可以设置
             }
+        }
+        //------------------VB power pack-----------------------------//
+        //繪圖相關變數宣告
+        ShapeContainer C;//畫布物件(本機繪圖用)
+        ShapeContainer D;//畫布物件(遠端繪圖用)
+        Point stP;//繪圖起點
+        string p;//筆畫座標字串
+        //本機端繪圖中
+        private void metroPanel2_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == System.Windows.Forms.MouseButtons.Left)
+            {
+                LineShape L = new LineShape();//建立線段物件
+                L.StartPoint = stP;//線段起點
+                L.EndPoint = e.Location;//線段終點
+                if (CheckBox1.Checked) { L.BorderColor = Color.Red; }//紅筆
+               // if (RadioButton2.Checked) { L.BorderColor = Color.Lime; }//亮綠色筆
+               // if (RadioButton3.Checked) { L.BorderColor = Color.Blue; }//藍筆
+               // if (RadioButton4.Checked) { L.BorderColor = Color.Black; }//黑筆
+                L.Parent = C;//線段加入畫布C
+                stP = e.Location;//終點變起點
+                p += "/" + stP.X.ToString() + "," + stP.Y.ToString();//持續紀錄座標
+            }
+        }
+        //送出繪圖動作
+        private void metroPanel2_MouseUp(object sender, MouseEventArgs e)
+        {
+            try
+            {
+                TcpClient S = new TcpClient(textBox1.Text, int.Parse(textBox2.Text));//建立UDP物件
+                if (CheckBox1.Checked) { p = "1_" + p; }//紅筆
+            //if (RadioButton2.Checked) { p = "2_" + p; }//亮綠色筆
+            //if (RadioButton3.Checked) { p = "3_" + p; }//藍筆
+            //if (RadioButton4.Checked) { p = "4_" + p; }//黑筆
+                Send(p);
+            }
+            catch { }
+        }
+        //本機端開始繪圖
+        private void metroPanel2_MouseDown(object sender, MouseEventArgs e)
+        {
+            stP = e.Location;//起點
+            p = stP.X.ToString() + "," + stP.Y.ToString();//起點座標紀錄
         }
     }
 }
