@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -41,7 +42,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.RadioButton4 = new MetroFramework.Controls.MetroRadioButton();
+            this.RadioButton3 = new MetroFramework.Controls.MetroRadioButton();
+            this.RadioButton2 = new MetroFramework.Controls.MetroRadioButton();
+            this.RadioButton1 = new MetroFramework.Controls.MetroRadioButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.TextBox7 = new MetroFramework.Controls.MetroTextBox();
@@ -52,8 +58,7 @@
             this.TextBox5 = new MetroFramework.Controls.MetroTextBox();
             this.TextBox6 = new MetroFramework.Controls.MetroTextBox();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
-            this.CheckBox1 = new MetroFramework.Controls.MetroCheckBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -96,17 +101,18 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "play it again";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox1
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(29, 191);
+            this.textBox1.Location = new System.Drawing.Point(29, 192);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(121, 25);
             this.textBox1.TabIndex = 3;
-            this.textBox1.Text = "192.168.1.10";
+            this.textBox1.Text = "172.20.10.3";
             // 
             // textBox2
             // 
@@ -197,7 +203,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel1.Controls.Add(this.CheckBox1);
+            this.panel1.Controls.Add(this.RadioButton4);
+            this.panel1.Controls.Add(this.RadioButton3);
+            this.panel1.Controls.Add(this.RadioButton2);
+            this.panel1.Controls.Add(this.RadioButton1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.button1);
@@ -217,6 +226,48 @@
             this.panel1.Size = new System.Drawing.Size(183, 891);
             this.panel1.TabIndex = 12;
             // 
+            // RadioButton4
+            // 
+            this.RadioButton4.AutoSize = true;
+            this.RadioButton4.Checked = true;
+            this.RadioButton4.Location = new System.Drawing.Point(28, 784);
+            this.RadioButton4.Name = "RadioButton4";
+            this.RadioButton4.Size = new System.Drawing.Size(53, 17);
+            this.RadioButton4.TabIndex = 19;
+            this.RadioButton4.TabStop = true;
+            this.RadioButton4.Text = "Black";
+            this.RadioButton4.UseSelectable = true;
+            // 
+            // RadioButton3
+            // 
+            this.RadioButton3.AutoSize = true;
+            this.RadioButton3.Location = new System.Drawing.Point(28, 761);
+            this.RadioButton3.Name = "RadioButton3";
+            this.RadioButton3.Size = new System.Drawing.Size(48, 17);
+            this.RadioButton3.TabIndex = 18;
+            this.RadioButton3.Text = "Blue";
+            this.RadioButton3.UseSelectable = true;
+            // 
+            // RadioButton2
+            // 
+            this.RadioButton2.AutoSize = true;
+            this.RadioButton2.Location = new System.Drawing.Point(28, 738);
+            this.RadioButton2.Name = "RadioButton2";
+            this.RadioButton2.Size = new System.Drawing.Size(59, 17);
+            this.RadioButton2.TabIndex = 17;
+            this.RadioButton2.Text = "Green";
+            this.RadioButton2.UseSelectable = true;
+            // 
+            // RadioButton1
+            // 
+            this.RadioButton1.AutoSize = true;
+            this.RadioButton1.Location = new System.Drawing.Point(28, 715);
+            this.RadioButton1.Name = "RadioButton1";
+            this.RadioButton1.Size = new System.Drawing.Size(47, 17);
+            this.RadioButton1.TabIndex = 16;
+            this.RadioButton1.Text = "Red";
+            this.RadioButton1.UseSelectable = true;
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.metroPanel2);
@@ -228,6 +279,23 @@
             this.panel2.Size = new System.Drawing.Size(1054, 891);
             this.panel2.TabIndex = 13;
             // 
+            // metroPanel2
+            // 
+            this.metroPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.metroPanel2.HorizontalScrollbarBarColor = true;
+            this.metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel2.HorizontalScrollbarSize = 10;
+            this.metroPanel2.Location = new System.Drawing.Point(0, 0);
+            this.metroPanel2.Name = "metroPanel2";
+            this.metroPanel2.Size = new System.Drawing.Size(1054, 665);
+            this.metroPanel2.TabIndex = 1;
+            this.metroPanel2.VerticalScrollbarBarColor = true;
+            this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel2.VerticalScrollbarSize = 10;
+            this.metroPanel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.metroPanel2_MouseDown);
+            this.metroPanel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.metroPanel2_MouseMove);
+            this.metroPanel2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.metroPanel2_MouseUp);
+            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.metroLabel2);
@@ -237,7 +305,7 @@
             this.panel3.Controls.Add(this.metroPanel1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 665);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1054, 226);
             this.panel3.TabIndex = 0;
@@ -258,10 +326,10 @@
             // 
             // 
             this.TextBox7.CustomButton.Image = null;
-            this.TextBox7.CustomButton.Location = new System.Drawing.Point(443, 2);
-            this.TextBox7.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextBox7.CustomButton.Location = new System.Drawing.Point(332, 2);
+            this.TextBox7.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox7.CustomButton.Name = "";
-            this.TextBox7.CustomButton.Size = new System.Drawing.Size(188, 176);
+            this.TextBox7.CustomButton.Size = new System.Drawing.Size(141, 141);
             this.TextBox7.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.TextBox7.CustomButton.TabIndex = 1;
             this.TextBox7.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -269,7 +337,7 @@
             this.TextBox7.CustomButton.Visible = false;
             this.TextBox7.Lines = new string[0];
             this.TextBox7.Location = new System.Drawing.Point(29, 40);
-            this.TextBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextBox7.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox7.MaxLength = 32767;
             this.TextBox7.Multiline = true;
             this.TextBox7.Name = "TextBox7";
@@ -292,10 +360,10 @@
             // 
             // 
             this.TextBox8.CustomButton.Image = null;
-            this.TextBox8.CustomButton.Location = new System.Drawing.Point(453, 1);
-            this.TextBox8.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextBox8.CustomButton.Location = new System.Drawing.Point(340, 1);
+            this.TextBox8.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox8.CustomButton.Name = "";
-            this.TextBox8.CustomButton.Size = new System.Drawing.Size(36, 34);
+            this.TextBox8.CustomButton.Size = new System.Drawing.Size(27, 27);
             this.TextBox8.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.TextBox8.CustomButton.TabIndex = 1;
             this.TextBox8.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -303,7 +371,7 @@
             this.TextBox8.CustomButton.Visible = false;
             this.TextBox8.Lines = new string[0];
             this.TextBox8.Location = new System.Drawing.Point(29, 194);
-            this.TextBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextBox8.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox8.MaxLength = 32767;
             this.TextBox8.Name = "TextBox8";
             this.TextBox8.PasswordChar = '\0';
@@ -322,7 +390,7 @@
             // metroButton2
             // 
             this.metroButton2.Location = new System.Drawing.Point(405, 194);
-            this.metroButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroButton2.Margin = new System.Windows.Forms.Padding(4);
             this.metroButton2.Name = "metroButton2";
             this.metroButton2.Size = new System.Drawing.Size(100, 29);
             this.metroButton2.TabIndex = 101;
@@ -341,7 +409,7 @@
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 12;
             this.metroPanel1.Location = new System.Drawing.Point(545, 0);
-            this.metroPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.metroPanel1.Name = "metroPanel1";
             this.metroPanel1.Size = new System.Drawing.Size(509, 226);
             this.metroPanel1.TabIndex = 1;
@@ -367,10 +435,10 @@
             // 
             // 
             this.TextBox5.CustomButton.Image = null;
-            this.TextBox5.CustomButton.Location = new System.Drawing.Point(443, 2);
-            this.TextBox5.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextBox5.CustomButton.Location = new System.Drawing.Point(332, 2);
+            this.TextBox5.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox5.CustomButton.Name = "";
-            this.TextBox5.CustomButton.Size = new System.Drawing.Size(188, 176);
+            this.TextBox5.CustomButton.Size = new System.Drawing.Size(141, 141);
             this.TextBox5.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.TextBox5.CustomButton.TabIndex = 1;
             this.TextBox5.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -378,7 +446,7 @@
             this.TextBox5.CustomButton.Visible = false;
             this.TextBox5.Lines = new string[0];
             this.TextBox5.Location = new System.Drawing.Point(21, 40);
-            this.TextBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextBox5.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox5.MaxLength = 32767;
             this.TextBox5.Multiline = true;
             this.TextBox5.Name = "TextBox5";
@@ -402,10 +470,10 @@
             // 
             // 
             this.TextBox6.CustomButton.Image = null;
-            this.TextBox6.CustomButton.Location = new System.Drawing.Point(453, 1);
-            this.TextBox6.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextBox6.CustomButton.Location = new System.Drawing.Point(340, 1);
+            this.TextBox6.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox6.CustomButton.Name = "";
-            this.TextBox6.CustomButton.Size = new System.Drawing.Size(36, 34);
+            this.TextBox6.CustomButton.Size = new System.Drawing.Size(27, 27);
             this.TextBox6.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.TextBox6.CustomButton.TabIndex = 1;
             this.TextBox6.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -413,7 +481,7 @@
             this.TextBox6.CustomButton.Visible = false;
             this.TextBox6.Lines = new string[0];
             this.TextBox6.Location = new System.Drawing.Point(21, 194);
-            this.TextBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextBox6.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox6.MaxLength = 32767;
             this.TextBox6.Name = "TextBox6";
             this.TextBox6.PasswordChar = '\0';
@@ -433,42 +501,13 @@
             // 
             this.metroButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.metroButton1.Location = new System.Drawing.Point(397, 194);
-            this.metroButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroButton1.Margin = new System.Windows.Forms.Padding(4);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(100, 29);
             this.metroButton1.TabIndex = 2;
             this.metroButton1.Text = " Send";
             this.metroButton1.UseSelectable = true;
             this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
-            // 
-            // metroPanel2
-            // 
-            this.metroPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroPanel2.HorizontalScrollbarBarColor = true;
-            this.metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel2.HorizontalScrollbarSize = 10;
-            this.metroPanel2.Location = new System.Drawing.Point(0, 0);
-            this.metroPanel2.Name = "metroPanel2";
-            this.metroPanel2.Size = new System.Drawing.Size(1054, 665);
-            this.metroPanel2.TabIndex = 1;
-            this.metroPanel2.VerticalScrollbarBarColor = true;
-            this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel2.VerticalScrollbarSize = 10;
-            this.metroPanel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.metroPanel2_MouseDown);
-            this.metroPanel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.metroPanel2_MouseMove);
-            this.metroPanel2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.metroPanel2_MouseUp);
-            // 
-            // CheckBox1
-            // 
-            this.CheckBox1.AutoSize = true;
-            this.CheckBox1.Checked = true;
-            this.CheckBox1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CheckBox1.Location = new System.Drawing.Point(28, 796);
-            this.CheckBox1.Name = "CheckBox1";
-            this.CheckBox1.Size = new System.Drawing.Size(121, 17);
-            this.CheckBox1.TabIndex = 12;
-            this.CheckBox1.Text = "metroCheckBox1";
-            this.CheckBox1.UseSelectable = true;
             // 
             // Form1
             // 
@@ -521,7 +560,11 @@
         private MetroFramework.Controls.MetroTextBox TextBox8;
         private MetroFramework.Controls.MetroButton metroButton2;
         private MetroFramework.Controls.MetroPanel metroPanel2;
-        private MetroFramework.Controls.MetroCheckBox CheckBox1;
+        private MetroFramework.Controls.MetroRadioButton RadioButton4;
+        private MetroFramework.Controls.MetroRadioButton RadioButton3;
+        private MetroFramework.Controls.MetroRadioButton RadioButton2;
+        private MetroFramework.Controls.MetroRadioButton RadioButton1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

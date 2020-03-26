@@ -76,21 +76,26 @@ namespace TCP_games
                         break;
                     //接收廣播訊息
                     case "1":
-                        TextBox5.Text += "(公開)" + Str + "\r\n";//顯示訊息並換行
-                        textBox1.SelectionStart = textBox1.Text.Length; //游標移到最後
-                        textBox1.ScrollToCaret(); //捲動到游標位置
+                        TextBox5.AppendText("(公開)" + Str + "\r\n");
                         break;
                     case "2":
-                        TextBox7.Text += "(公開)" + Str + "\r\n";//顯示訊息並換行
-                        textBox1.SelectionStart = textBox1.Text.Length; //游標移到最後
-                        textBox1.ScrollToCaret(); //捲動到游標位置
+                        if (Str == "123")
+                        {
+                            TextBox7.AppendText(User + ": Hit"  + "\r\n");//顯示訊息並換行
+                            TextBox8.ReadOnly=true;
+                            metroButton2.Enabled = false;
+                        }
+                        else
+                        {
+                            TextBox7.AppendText(User + ":" + Str + "\r\n");//顯示訊息並換行
+                        }
                         break;
-                    //接收私密訊息
-                    case "3":
-                        TextBox5.Text += "(私密)" + Str + "\r\n";//顯示訊息並換行
-                        textBox1.SelectionStart = textBox1.Text.Length;//游標移到最後
-                        textBox1.ScrollToCaret();//捲動到游標位置
+                    case "3"://接收私密訊息
+                        TextBox5.AppendText("(私密)" + Str + "\r\n");//顯示訊息並換行游標移到最後
                         break;
+                    case "5":
+                        PointShape(Str);
+                        break;  
                 }
             }
         }
@@ -104,9 +109,6 @@ namespace TCP_games
         {
             C = new ShapeContainer();//建立畫布(本機繪圖用)
             metroPanel2.Controls.Add(C);
-            D = new ShapeContainer();//建立畫布(遠端繪圖用)
-            metroPanel2.Controls.Add(D);//加入畫布D到表單
-          
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -121,7 +123,7 @@ namespace TCP_games
                 if (button1.Text.Equals("Sign in"))
                 {
                     IPEndPoint EP = new IPEndPoint(IPAddress.Parse(IP), Port);//建立伺服器端點資訊
-                                                                              //建立TCP通訊物件
+                    //建立TCP通訊物件
                     T = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
                     T.Connect(EP); //連上Server的EP端點(類似撥號連線)
                     Th = new Thread(Listen); //建立監聽執行緒
@@ -193,7 +195,7 @@ namespace TCP_games
             if (TextBox8.Text == "") return; //未輸入訊息不傳送資料
             if (listBox1.SelectedIndex < 0)//未選取傳送對象(廣播)，命令碼：1
             {
-                Send("2" + User + "公告：" + TextBox8.Text);
+                Send("2" + TextBox8.Text);
             }
             else
             {
@@ -209,7 +211,7 @@ namespace TCP_games
                 if (TextBox8.Text == "") return; //未輸入訊息不傳送資料
                 if (listBox1.SelectedIndex < 0)//未選取傳送對象(廣播)，命令碼：1
                 {
-                    Send("2" + User + "公告：" + TextBox8.Text);
+                    Send("2" + TextBox8.Text);
                 }
                 else//有選取傳送對象(私密訊息)，命令碼：2
                 {
@@ -222,7 +224,6 @@ namespace TCP_games
         //------------------VB power pack-----------------------------//
         //繪圖相關變數宣告
         ShapeContainer C;//畫布物件(本機繪圖用)
-        ShapeContainer D;//畫布物件(遠端繪圖用)
         Point stP;//繪圖起點
         string p;//筆畫座標字串
         //本機端繪圖中
@@ -230,14 +231,14 @@ namespace TCP_games
         {
             if (e.Button == System.Windows.Forms.MouseButtons.Left)
             {
-                LineShape L = new LineShape();//建立線段物件
-                L.StartPoint = stP;//線段起點
-                L.EndPoint = e.Location;//線段終點
-                if (CheckBox1.Checked) { L.BorderColor = Color.Red; }//紅筆
-               // if (RadioButton2.Checked) { L.BorderColor = Color.Lime; }//亮綠色筆
-               // if (RadioButton3.Checked) { L.BorderColor = Color.Blue; }//藍筆
-               // if (RadioButton4.Checked) { L.BorderColor = Color.Black; }//黑筆
-                L.Parent = C;//線段加入畫布C
+                LineShape Line = new LineShape();//建立線段物件
+                Line.StartPoint = stP;//線段起點
+                Line.EndPoint = e.Location;//線段終點
+                if (RadioButton1.Checked) { Line.BorderColor = Color.Red; }//紅筆
+                if (RadioButton2.Checked) { Line.BorderColor = Color.Lime; }//亮綠色筆
+                if (RadioButton3.Checked) { Line.BorderColor = Color.Blue; }//藍筆
+                if (RadioButton4.Checked) { Line.BorderColor = Color.Black; }//黑筆
+                Line.Parent = C;//線段加入畫布C
                 stP = e.Location;//終點變起點
                 p += "/" + stP.X.ToString() + "," + stP.Y.ToString();//持續紀錄座標
             }
@@ -245,22 +246,41 @@ namespace TCP_games
         //送出繪圖動作
         private void metroPanel2_MouseUp(object sender, MouseEventArgs e)
         {
-            try
-            {
-                TcpClient S = new TcpClient(textBox1.Text, int.Parse(textBox2.Text));//建立UDP物件
-                if (CheckBox1.Checked) { p = "1_" + p; }//紅筆
-            //if (RadioButton2.Checked) { p = "2_" + p; }//亮綠色筆
-            //if (RadioButton3.Checked) { p = "3_" + p; }//藍筆
-            //if (RadioButton4.Checked) { p = "4_" + p; }//黑筆
-                Send(p);
-            }
-            catch { }
+                if (RadioButton1.Checked) { p = "1_" + p; }//紅筆
+                if (RadioButton2.Checked) { p = "2_" + p; }//綠色筆
+                if (RadioButton3.Checked) { p = "3_" + p; }//藍筆
+                if (RadioButton4.Checked) { p = "4_" + p; }//黑筆
+                Send("5"+p);   
         }
         //本機端開始繪圖
         private void metroPanel2_MouseDown(object sender, MouseEventArgs e)
         {
             stP = e.Location;//起點
             p = stP.X.ToString() + "," + stP.Y.ToString();//起點座標紀錄
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            C.Shapes.Clear();
+        }
+        private void PointShape(string  str) 
+        {
+            while (true)
+            {
+                string[] Z = str.Split('_');
+                string[] Q = Z[1].Split('/');//切割座標點資訊
+                Point[] R = new Point[Q.Length];//宣告座標點陣列
+                for (int i = 0; i < Q.Length; i++)
+                {
+                    string[] K = Q[i].Split(',');//切割X與Y座標
+                    R[i].X = int.Parse(K[0]);//定義第i點X座標
+                    R[i].Y = int.Parse(K[1]);//定義第i點Y座標
+                }
+                    LineShape Line = new LineShape();//建立線段物件
+                    Line.Parent = C;//線段L加入畫布D(遠端使用者繪圖)
+                
+            }
+   
         }
     }
 }

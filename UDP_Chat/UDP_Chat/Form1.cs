@@ -26,7 +26,7 @@ namespace UDP_Chat
         Thread Th;//宣告監聽用執行緒
         String MyName;//我的名稱
         ArrayList ips = new ArrayList();//線上客戶IP列表
-        const short Port = 2013;//本程式使用的通訊埠(頻道)
+        const int Port = 2013;//本程式使用的通訊埠(頻道)
         string BC;//廣播用IP
 
         private void Form1_Load(object sender, EventArgs e)
@@ -98,41 +98,46 @@ namespace UDP_Chat
         //監聽副程式
         private void Listen()
         {
-            U = new UdpClient(Port); //建立UDP通訊物件
-            IPEndPoint EP = new IPEndPoint(IPAddress.Parse(MyIP()), Port); //接聽端點(IP+Port)
-            while (true)
-            {
-                byte[] B = U.Receive(ref EP); //訊息到達時讀取資訊到B陣列
-                string A = Encoding.Default.GetString(B); //翻譯B陣列為字串A
-                //切割訊息為：C[0]=發訊者；C[1]=IP；C[2]=訊息；C[3]=發訊對象
-                string[] C = A.Split(':');
-                switch (C[2])//依據訊息內容執行工作
+            try {
+                U = new UdpClient(Port); //建立UDP通訊物件
+                IPEndPoint EP = new IPEndPoint(IPAddress.Parse(MyIP()), Port); //接聽端點(IP+Port)
+                while (true)
                 {
-                    case "OnLine"://有人新上線的訊息
-                        ListBox1.Items.Add(C[0]); //名稱加入列表
-                        ips.Add(C[1]); //IP加入集合物件
-                        if (C[0] != MyName) Send(C[1], "AddMe", C[0]); //回應我也在線上
-                        break;
-                    case "AddMe"://接收到誰也在線上的訊息
-                        ListBox1.Items.Add(C[0]); //名稱加入列表
-                        ips.Add(C[1]); //IP加入集合物件
-                        break;
-                    case "OffLine"://客戶離線的訊息
-                        ListBox1.Items.Remove(C[0]);//移除名單
-                        ips.Remove(C[1]);//移除IP
-                        break;
-                    default://一般訊息
-                        if (C[3] == "")//公開訊息(無指定收訊者)
-                        {
-                            ListBox2.Items.Add(C[0] + "(公開):" + C[2]);//加入看板
-                        }
-                        else
-                        {//私密訊息(有指定收訊者C[3])
-                            ListBox2.Items.Add(C[0] + "(私密):" + C[2]);//加入看板
-                        }
-                        break;
+                    byte[] B = U.Receive(ref EP); //訊息到達時讀取資訊到B陣列
+                    string A = Encoding.Default.GetString(B); //翻譯B陣列為字串A
+                                                              //切割訊息為：C[0]=發訊者；C[1]=IP；C[2]=訊息；C[3]=發訊對象
+                    string[] C = A.Split(':');
+                    switch (C[2])//依據訊息內容執行工作
+                    {
+                        case "OnLine"://有人新上線的訊息
+                            ListBox1.Items.Add(C[0]); //名稱加入列表
+                            ips.Add(C[1]); //IP加入集合物件
+                            if (C[0] != MyName) Send(C[1], "AddMe", C[0]); //回應我也在線上
+                            break;
+                        case "AddMe"://接收到誰也在線上的訊息
+                            ListBox1.Items.Add(C[0]); //名稱加入列表
+                            ips.Add(C[1]); //IP加入集合物件
+                            break;
+                        case "OffLine"://客戶離線的訊息
+                            ListBox1.Items.Remove(C[0]);//移除名單
+                            ips.Remove(C[1]);//移除IP
+                            break;
+                        default://一般訊息
+                            if (C[3] == "")//公開訊息(無指定收訊者)
+                            {
+                                ListBox2.Items.Add(C[0] + "(公開):" + C[2]);//加入看板
+                            }
+                            else
+                            {//私密訊息(有指定收訊者C[3])
+                                ListBox2.Items.Add(C[0] + "(私密):" + C[2]);//加入看板
+                            }
+                            break;
+                    }
                 }
+
             }
+            catch { }
+            
         }
 
         private void Button2_Click(object sender, EventArgs e)
