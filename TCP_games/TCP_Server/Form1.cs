@@ -69,7 +69,11 @@ namespace TCP_Server
                             SendAll(Onlinelist()); //將目前上線人名單回傳剛剛登入的人(不包含他自己)
                             Th.Abort(); //結束此客戶的監聽執行緒
                             break;
-                        case "1":case "2":case "5"://使用者傳送訊息給所有人
+                        case "1"://使用者傳送訊息給所有人
+                        case "2":
+                        case "5":
+                        case "A":
+                        case "C":
                             SendAll(Msg); //廣播訊息
                             break;
                         default://使用者傳送私密訊息

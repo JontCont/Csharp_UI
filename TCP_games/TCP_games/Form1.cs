@@ -11,6 +11,7 @@ using MetroFramework.Forms;
 using System.Net;//匯入網路通訊協定相關函數
 using System.Net.Sockets;//匯入網路插座功能函數
 using System.Threading;//匯入多執行緒功能函數
+using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.PowerPacks;
 
 namespace TCP_games
@@ -18,13 +19,20 @@ namespace TCP_games
     public partial class Form1 : MetroFramework.Forms.MetroForm
     {
         //------------------------------------------//
-        //ShapeContainer CVS;
-        //byte[,] S;//對應棋盤狀態的陣列：0為空格，1為黑子，2為白子
         //公用變數
         Socket T;//通訊物件
         Thread Th;//網路監聽執行緒
         string User;//使用者
-
+        string[] card ={
+            "牛奶","咖啡","黑咖啡","茶","紅茶","綠茶","冰紅茶","青草茶","烏龍茶","擂茶","珍珠奶茶","蔬果汁"
+            ,"柳橙汁","蕃茄汁","蘋果汁","葡萄汁","葡萄柚汁","新鲜胡萝卜汁","什锦蔬菜汁","鳳梨汁"
+            ,"檸檬汁","甘蔗汁","酸梅汁","楊桃汁","椰子汁","西瓜","蓮霧","香蕉","葡萄","木瓜","鳳梨"
+            ,"水梨","榴槤","草莓","蘋果","奇異果","荔枝","龍眼","火龍果","橘子","哈密瓜","櫻桃","芭樂"
+            ,"水蜜桃","檸檬","芒果","香瓜","李子","文旦","包心菜","紫色包心菜","蔥","芹菜","紅蘿蔔"
+            ,"辣椒","黃瓜","蒜頭","小紅蘿蔔","菠菜","空心菜","白木耳","玉米粒","豆芽","蘆筍","山芋"
+            ,"花椰菜","大白菜","薑","大蔥","萵苣","蘑菇","豌豆","馬鈴薯","冬瓜","芋頭","橘子","洋蔥"
+            ,"芥菜","橄欖","金針菇","四季豆","甜菜","茄子","結球菜心","荸薺","白花菜","地瓜","番茄"};
+        string Ans;
         //------------------Sub------------------------//
         //送出訊息給server
         private void Send(string Str)
@@ -69,34 +77,39 @@ namespace TCP_games
                     case "L"://接收線上名單
                         listBox1.Items.Clear(); //清除名單
                         string[] M = Str.Split(','); //拆解名單成陣列
-                        for (int i = 0; i < M.Length; i++)
-                        {
-                            listBox1.Items.Add(M[i]); //逐一加入名單
-                        }
+                        player = M;
+                        for (int i = 0; i < M.Length; i++) listBox1.Items.Add(M[i]); //逐一加入名單
                         break;
                     //接收廣播訊息
                     case "1":
                         TextBox5.AppendText("(公開)" + Str + "\r\n");
                         break;
                     case "2":
-                        if (Str == "123")
+                        
+                        if (Ans.Equals(Str))
                         {
                             TextBox7.AppendText(User + ": Hit"  + "\r\n");//顯示訊息並換行
                             TextBox8.ReadOnly=true;
                             metroButton2.Enabled = false;
                         }
-                        else
-                        {
-                            TextBox7.AppendText(User + ":" + Str + "\r\n");//顯示訊息並換行
-                        }
+                        else TextBox7.AppendText(User + ":" + Str + "\r\n");//顯示訊息並換行
+                        
                         break;
                     case "3"://接收私密訊息
                         TextBox5.AppendText("(私密)" + Str + "\r\n");//顯示訊息並換行游標移到最後
                         break;
                     case "5":
                         PointShape(Str);
-                        break;  
+                        break;
+                    case "A"://答案
+                        Ans = Str;
+                        metroLabel3.Text = Ans;
+                        break;
+                    case "C"://cls
+                        D.Shapes.Clear();
+                        break;
                 }
+                
             }
         }
         //---------------------------------------------//
@@ -107,8 +120,7 @@ namespace TCP_games
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            C = new ShapeContainer();//建立畫布(本機繪圖用)
-            metroPanel2.Controls.Add(C);
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -156,14 +168,11 @@ namespace TCP_games
             catch { }
         }
 
-        private void metroButton1_Click(object sender, EventArgs e)
+        private void metroButton1_Click(object sender, EventArgs e) //聊天室
         {
-            if (TextBox6.Text == "") return; //未輸入訊息不傳送資料
-            if (listBox1.SelectedIndex < 0)//未選取傳送對象(廣播)，命令碼：1
-            {
-                Send("1" + User + "：" + TextBox6.Text);
-            }
-            else//有選取傳送對象(私密訊息)，命令碼：2
+            if (TextBox6.Text == "") return; 
+            if (listBox1.SelectedIndex < 0) Send("1" + User + "：" + TextBox6.Text);
+            else
             {
                 Send("3" + "來自" + User + ": " + TextBox6.Text + "|" + listBox1.SelectedItem);
                 TextBox5.Text += "私密" + listBox1.SelectedItem + "： " + TextBox6.Text + "\r\n";
@@ -171,16 +180,13 @@ namespace TCP_games
             TextBox6.Text = ""; //清除發言框
         }
 
-        private void TextBox6_KeyDown(object sender, KeyEventArgs e)
+        private void TextBox6_KeyDown(object sender, KeyEventArgs e)//聊天室
         {
             if (e.KeyCode == Keys.Enter) 
             {
                 if (TextBox6.Text == "") return; //未輸入訊息不傳送資料
-                if (listBox1.SelectedIndex < 0)//未選取傳送對象(廣播)，命令碼：1
-                {
-                    Send("1" + User + "：" + TextBox6.Text);
-                }
-                else//有選取傳送對象(私密訊息)，命令碼：2
+                if (listBox1.SelectedIndex < 0)  Send("1" + User + "：" + TextBox6.Text);
+                else
                 {
                     Send("3" + "來自" + User + ": " + TextBox6.Text + "|" + listBox1.SelectedItem);
                     TextBox5.Text += "告訴" + listBox1.SelectedItem + "： " + TextBox6.Text + "\r\n";
@@ -192,16 +198,12 @@ namespace TCP_games
 
         private void metroButton2_Click(object sender, EventArgs e)
         {
-            if (TextBox8.Text == "") return; //未輸入訊息不傳送資料
-            if (listBox1.SelectedIndex < 0)//未選取傳送對象(廣播)，命令碼：1
+            if (TextBox8.Text == "") return;
+            if (listBox1.SelectedIndex < 0)
             {
                 Send("2" + TextBox8.Text);
             }
-            else
-            {
-                TextBox8.Enabled = false;
-            }
-            TextBox8.Text = ""; //清除發言框
+            TextBox8.Text = ""; 
         }
 
         private void TextBox8_KeyDown(object sender, KeyEventArgs e)
@@ -213,19 +215,51 @@ namespace TCP_games
                 {
                     Send("2" + TextBox8.Text);
                 }
-                else//有選取傳送對象(私密訊息)，命令碼：2
-                {
-                    TextBox8.Enabled = false;
-                }
                 TextBox8.Text = ""; //清除發言框
                 e.SuppressKeyPress = true; //SuppressKeyPress和Hanld都可以设置
             }
         }
+        //----------------------遊戲優先權----------------------------//
+        int p_num = 0;
+        //int score = 100;//範圍
+        private int RandomNum()
+        {
+            int temp = 0;
+            Random crandom = new Random();
+            for (int i = 0; i < card.Length; i++)
+            {
+                temp = crandom.Next(0, card.Length);
+            }
+            return temp;
+        }
+        private void Game()
+        {
+            if (p_num > listBox1.Items.Count - 1) p_num = 0;
+            if (player[p_num] == User)//畫者
+            {
+                Send("A" + card[RandomNum()]);
+                //MessageBox.Show(Ans);
+                C = new ShapeContainer();//建立畫布(本機繪圖用)
+                metroPanel2.Controls.Add(C);
+                D = new ShapeContainer();//建立畫布(本機繪圖用)
+                TextBox8.Enabled = false;
+            }
+            else
+            {
+                D = new ShapeContainer();//建立畫布(本機繪圖用)
+                metroPanel2.Controls.Add(D);
+                metroPanel2.Enabled = false;
+            }
+            p_num++;
+        }
+        
         //------------------VB power pack-----------------------------//
         //繪圖相關變數宣告
         ShapeContainer C;//畫布物件(本機繪圖用)
+        ShapeContainer D;
         Point stP;//繪圖起點
         string p;//筆畫座標字串
+        string[] player;
         //本機端繪圖中
         private void metroPanel2_MouseMove(object sender, MouseEventArgs e)
         {
@@ -246,11 +280,11 @@ namespace TCP_games
         //送出繪圖動作
         private void metroPanel2_MouseUp(object sender, MouseEventArgs e)
         {
-                if (RadioButton1.Checked) { p = "1_" + p; }//紅筆
-                if (RadioButton2.Checked) { p = "2_" + p; }//綠色筆
-                if (RadioButton3.Checked) { p = "3_" + p; }//藍筆
-                if (RadioButton4.Checked) { p = "4_" + p; }//黑筆
-                Send("5"+p);   
+            if (RadioButton1.Checked) { p = "1_" + p; }//紅筆
+            if (RadioButton2.Checked) { p = "2_" + p; }//綠色筆
+            if (RadioButton3.Checked) { p = "3_" + p; }//藍筆
+            if (RadioButton4.Checked) { p = "4_" + p; }//黑筆
+            Send("5"+p);   
         }
         //本機端開始繪圖
         private void metroPanel2_MouseDown(object sender, MouseEventArgs e)
@@ -262,25 +296,76 @@ namespace TCP_games
         private void button2_Click(object sender, EventArgs e)
         {
             C.Shapes.Clear();
+            Send("C");
         }
         private void PointShape(string  str) 
         {
-            while (true)
+            string[] Z = str.Split('_');
+            string[] Q = Z[1].Split('/');//切割座標點資訊
+            Point[] R = new Point[Q.Length];//宣告座標點陣列
+            try
             {
-                string[] Z = str.Split('_');
-                string[] Q = Z[1].Split('/');//切割座標點資訊
-                Point[] R = new Point[Q.Length];//宣告座標點陣列
                 for (int i = 0; i < Q.Length; i++)
                 {
                     string[] K = Q[i].Split(',');//切割X與Y座標
                     R[i].X = int.Parse(K[0]);//定義第i點X座標
                     R[i].Y = int.Parse(K[1]);//定義第i點Y座標
                 }
-                    LineShape Line = new LineShape();//建立線段物件
-                    Line.Parent = C;//線段L加入畫布D(遠端使用者繪圖)
-                
             }
-   
+            catch(FormatException)
+            {}
+
+            try 
+            {
+                for (int i = 0; i < Q.Length - 1; i++)
+                {
+                    LineShape L = new LineShape();//建立線段物件
+                    L.StartPoint = R[i];//線段起點
+                    L.EndPoint = R[i + 1];//線段終點
+                    switch (Z[0])//筆色
+                    {
+                        case "1"://紅筆
+                            L.BorderColor = Color.Red;
+                            break;
+                        case "2"://亮綠色筆
+                            L.BorderColor = Color.Lime;
+                            break;
+                        case "3"://藍筆
+                            L.BorderColor = Color.Blue;
+                            break;
+                        case "4"://黑筆
+                            L.BorderColor = Color.Black;
+                            break;
+                    }
+                    L.Parent = D;//線段L加入畫布D(遠端使用者繪圖)
+                }
+            } catch (InvalidOperationException)
+            { }
+        }
+
+        private void metroButton3_Click(object sender, EventArgs e)
+        {
+            if (listBox1.Items.Count > -1)
+            {
+                metroButton3.Hide();
+                this.timer1.Start();
+                Game();
+            }
+            else
+            {
+                TextBox5.AppendText("(系統) : 必須要兩個人以上的玩家 。 \r\n");
+            }
+        }
+        // private int counter;
+        int waint_timer = 3; //3-32秒 20-5秒
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            this.metroProgressBar1.Increment(waint_timer);
+            if (metroProgressBar1.Value > 100)
+            {
+                timer1.Stop();
+                metroLabel3.Text = "stop";
+            }
         }
     }
 }
