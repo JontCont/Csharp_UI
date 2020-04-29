@@ -1,0 +1,10 @@
+C:\Users\LeomonRD\source\repos\ShootGame\ShootGame\bin\Debug\ShootGame.exe.config
+C:\Users\LeomonRD\source\repos\ShootGame\ShootGame\bin\Debug\ShootGame.exe
+C:\Users\LeomonRD\source\repos\ShootGame\ShootGame\bin\Debug\ShootGame.pdb
+C:\Users\LeomonRD\source\repos\ShootGame\ShootGame\obj\Debug\ShootGame.csprojAssemblyReference.cache
+C:\Users\LeomonRD\source\repos\ShootGame\ShootGame\obj\Debug\ShootGame.Form1.resources
+C:\Users\LeomonRD\source\repos\ShootGame\ShootGame\obj\Debug\ShootGame.Properties.Resources.resources
+C:\Users\LeomonRD\source\repos\ShootGame\ShootGame\obj\Debug\ShootGame.csproj.GenerateResource.cache
+C:\Users\LeomonRD\source\repos\ShootGame\ShootGame\obj\Debug\ShootGame.csproj.CoreCompileInputs.cache
+C:\Users\LeomonRD\source\repos\ShootGame\ShootGame\obj\Debug\ShootGame.exe
+C:\Users\LeomonRD\source\repos\ShootGame\ShootGame\obj\Debug\ShootGame.pdb
