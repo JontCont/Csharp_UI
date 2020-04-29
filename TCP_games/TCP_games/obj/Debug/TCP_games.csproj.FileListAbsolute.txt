@@ -50,3 +50,4 @@ E:\GitHub\Csharp_UI\TCP_games\TCP_games\obj\Debug\TCP_games.csproj.CopyComplete
 E:\GitHub\Csharp_UI\TCP_games\TCP_games\obj\Debug\TCP_games.exe
 E:\GitHub\Csharp_UI\TCP_games\TCP_games\obj\Debug\TCP_games.pdb
 E:\GIT\Csharp_UI\TCP_games\TCP_games\obj\Debug\TCP_games.Form2.resources
+E:\GitHub\Csharp_UI\TCP_games\TCP_games\obj\Debug\TCP_games.Form2.resources

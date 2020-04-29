@@ -42,7 +42,6 @@ namespace TCP_games
                 T.Send(B, 0, B.Length, SocketFlags.None); //傳送訊息給伺服器
             } 
             catch { }
-            
         }
 
         //監聽 Server 訊息 (Listening to the Server)
@@ -118,10 +117,7 @@ namespace TCP_games
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
+        private void Form1_Load(object sender, EventArgs e){}
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -147,9 +143,12 @@ namespace TCP_games
                 }
                 else if(button1.Text.Equals("Sign out")) 
                 {
+                    metroButton3.Show();
                     Send("9" + User);
                     T.Close(); //關閉網路通訊器
                     button1.Text = "Sign in";
+                    timer1.Stop();
+                    metroProgressBar1.Value = 0;
                 }
             }
             catch
@@ -238,7 +237,6 @@ namespace TCP_games
             if (player[p_num] == User)//畫者
             {
                 Send("A" + card[RandomNum()]);
-                //MessageBox.Show(Ans);
                 C = new ShapeContainer();//建立畫布(本機繪圖用)
                 metroPanel2.Controls.Add(C);
                 D = new ShapeContainer();//建立畫布(本機繪圖用)
@@ -246,10 +244,12 @@ namespace TCP_games
             }
             else
             {
+                metroLabel3.Text = "";
                 D = new ShapeContainer();//建立畫布(本機繪圖用)
                 metroPanel2.Controls.Add(D);
                 metroPanel2.Enabled = false;
             }
+            metroLabel3.Text += "Draw :" + player[p_num];
             p_num++;
         }
         
@@ -345,10 +345,10 @@ namespace TCP_games
 
         private void metroButton3_Click(object sender, EventArgs e)
         {
-            if (listBox1.Items.Count > -1)
+            if (listBox1.Items.Count > 2)
             {
                 metroButton3.Hide();
-                this.timer1.Start();
+                timer1.Start();
                 Game();
             }
             else
@@ -357,15 +357,12 @@ namespace TCP_games
             }
         }
         // private int counter;
-        int waint_timer = 3; //3-32秒 20-5秒
+        private int counter = 0;
         private void timer1_Tick(object sender, EventArgs e)
         {
-            this.metroProgressBar1.Increment(waint_timer);
-            if (metroProgressBar1.Value > 100)
-            {
-                timer1.Stop();
-                metroLabel3.Text = "stop";
-            }
+            counter++;
+            timer1.Interval = 500;
+            this.metroProgressBar1.Increment(counter);
         }
     }
 }
