@@ -51,20 +51,44 @@ namespace SqlForm
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try {
+                Sqlstr = "select * from " + comboBox1.Text +" where " 
+                        + comboBox2.Text + " LIKE '%" 
+                        + textBox1.Text + "%'";
+                da = new SqlDataAdapter(Sqlstr, connection);
+
+                ds = new DataSet();
+                da.Fill(ds);
+                this.dataGridView1.DataSource = ds.Tables[0].DefaultView;
+                label5.Text = (dataGridView1.Rows.Count - 1).ToString();
+            }
+            catch { }
+
+        }
+
         private void comboBox1_SelectedValueChanged(object sender, EventArgs e)
         {
             try
             {
                 //if (textBox1.Text.Equals("")) textBox1.Text = "BDP03_0000";
-
+                comboBox2.Items.Clear();
                 Sqlstr = "select * from " + comboBox1.Text;
                 da = new SqlDataAdapter(Sqlstr, connection);
 
                 ds = new DataSet();
                 da.Fill(ds);
                 this.dataGridView1.DataSource = ds.Tables[0].DefaultView;
+                
+                for(int n = 0; n< dataGridView1.Columns.Count; n++)
+                {
+                    //textBox1.Text += dataGridView1.Columns[n].HeaderText;
+                    comboBox2.Items.Add(dataGridView1.Columns[n].HeaderText);
+                }
+                label5.Text = (dataGridView1.Rows.Count-1).ToString();
             }
-            catch{}
+            catch {}
         }
 
 
