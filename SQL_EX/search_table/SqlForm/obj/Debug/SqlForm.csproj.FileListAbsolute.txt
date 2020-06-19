@@ -1,0 +1,10 @@
+C:\Users\JontCont\source\repos\SqlForm\SqlForm\bin\Debug\SqlForm.exe.config
+C:\Users\JontCont\source\repos\SqlForm\SqlForm\bin\Debug\SqlForm.exe
+C:\Users\JontCont\source\repos\SqlForm\SqlForm\bin\Debug\SqlForm.pdb
+C:\Users\JontCont\source\repos\SqlForm\SqlForm\obj\Debug\SqlForm.csprojAssemblyReference.cache
+C:\Users\JontCont\source\repos\SqlForm\SqlForm\obj\Debug\SqlForm.Form1.resources
+C:\Users\JontCont\source\repos\SqlForm\SqlForm\obj\Debug\SqlForm.Properties.Resources.resources
+C:\Users\JontCont\source\repos\SqlForm\SqlForm\obj\Debug\SqlForm.csproj.GenerateResource.cache
+C:\Users\JontCont\source\repos\SqlForm\SqlForm\obj\Debug\SqlForm.csproj.CoreCompileInputs.cache
+C:\Users\JontCont\source\repos\SqlForm\SqlForm\obj\Debug\SqlForm.exe
+C:\Users\JontCont\source\repos\SqlForm\SqlForm\obj\Debug\SqlForm.pdb
