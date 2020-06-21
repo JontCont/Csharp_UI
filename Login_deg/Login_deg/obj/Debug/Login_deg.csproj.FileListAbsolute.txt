@@ -58,3 +58,17 @@ E:\GIT\Csharp_UI\Login_deg\Login_deg\obj\Debug\Login_deg.csproj.GenerateResource
 E:\GIT\Csharp_UI\Login_deg\Login_deg\obj\Debug\Login_deg.csproj.CopyComplete
 E:\GIT\Csharp_UI\Login_deg\Login_deg\obj\Debug\Login_deg.exe
 E:\GIT\Csharp_UI\Login_deg\Login_deg\obj\Debug\Login_deg.pdb
+E:\GitHub\Csharp_UI\Login_deg\Login_deg\bin\Debug\Login_deg.exe.config
+E:\GitHub\Csharp_UI\Login_deg\Login_deg\bin\Debug\Login_deg.exe
+E:\GitHub\Csharp_UI\Login_deg\Login_deg\bin\Debug\Login_deg.pdb
+E:\GitHub\Csharp_UI\Login_deg\Login_deg\obj\Debug\Login_deg.csprojAssemblyReference.cache
+E:\GitHub\Csharp_UI\Login_deg\Login_deg\obj\Debug\Login_deg.exe.config
+E:\GitHub\Csharp_UI\Login_deg\Login_deg\obj\Debug\Login_deg.Form_Login.resources
+E:\GitHub\Csharp_UI\Login_deg\Login_deg\obj\Debug\Login_deg.Inc.resources
+E:\GitHub\Csharp_UI\Login_deg\Login_deg\obj\Debug\Login_deg.Regit1.resources
+E:\GitHub\Csharp_UI\Login_deg\Login_deg\obj\Debug\Login_deg.Properties.Resources.resources
+E:\GitHub\Csharp_UI\Login_deg\Login_deg\obj\Debug\Login_deg.csproj.GenerateResource.cache
+E:\GitHub\Csharp_UI\Login_deg\Login_deg\obj\Debug\Login_deg.csproj.CoreCompileInputs.cache
+E:\GitHub\Csharp_UI\Login_deg\Login_deg\obj\Debug\Login_deg.csproj.CopyComplete
+E:\GitHub\Csharp_UI\Login_deg\Login_deg\obj\Debug\Login_deg.exe
+E:\GitHub\Csharp_UI\Login_deg\Login_deg\obj\Debug\Login_deg.pdb
